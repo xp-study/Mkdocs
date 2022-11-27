@@ -20,3 +20,5 @@ fi
 docker build . --tags mkdocs:latest
 
 docker run -itd -p 10000:10000 --name mkdocs mkdocs:latest
+
+rm -rf /opt/mkdocs/*

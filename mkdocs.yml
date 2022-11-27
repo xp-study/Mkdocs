@@ -1,0 +1,118 @@
+site_name: 许鹏的学习文档
+nav:
+    - 目录: index.md
+    - 开发环境搭建:
+        - 安装虚拟机版本Windows: 开发环境搭建/安装虚拟机版本Windows/安装虚拟机版本Windows.md
+        - 安装虚拟机版本Ubuntu: 开发环境搭建/安装虚拟机版本Ubuntu/安装虚拟机版本Ubuntu.md
+        - VSCode开发环境搭建:
+            - 安装配置: 开发环境搭建/VSCode开发环境搭建/安装配置.md
+            - 常用开发插件: 开发环境搭建/VSCode开发环境搭建/常用开发插件.md
+        - Gitlab服务器环境搭建: 
+            - 使用Docker部署Gitlab: 开发环境搭建/Gitlab环境搭建/使用Docker部署Gitlab.md
+            - gitlab设置中文:  开发环境搭建/Gitlab环境搭建/gitlab设置中文.md
+            - Gitlab定时备份: 开发环境搭建/Gitlab环境搭建/Gitlab定时备份.md
+            - Gitlab配置邮件服务: 开发环境搭建/Gitlab环境搭建/Gitlab配置邮件服务.md            
+        - Go语言Ubuntu开发环境搭建: 开发环境搭建/Go语言Ubuntu开发环境搭建.md
+        - Go语言Windows开发环境搭建: 开发环境搭建/Go语言Windows开发环境搭建.md
+        - Node.js开发环境搭建: 开发环境搭建/Node.js开发环境搭建.md
+    - 开发语言:
+        - Go语言开发:
+            - 模块管理: 开发语言/Go语言开发/模块管理.md
+            - 可执行文件压缩: 开发语言/Go语言开发/可执行文件压缩.md
+        - Java语言开发:
+            - Linux下安装JDK: 开发语言/Java开发技术/Ubuntu20.04安装JDK(java环境).md
+            - Linux下配置Maven环境: 开发语言/Java开发技术/Ubuntu20.04下配置Maven环境.md
+            - 使用IDEA配置Maven:  开发语言/Java开发技术/使用IDEA配置Maven.md
+            - SpringBoot第一个程序: 开发语言/Java开发技术/SpringBoot第一个程序.md
+            - Dockerfile部署SpringBoot项目: 开发语言/Java开发技术/IDEA连接远程服务器Docker部署SpringBoot项目.md
+            - 创建SpringBoot多模块工程: 开发语言/Java开发技术/创建SpringBoot多模块工程.md
+            - JavaBean规范: 开发语言/Java开发技术/JavaBean规范.md
+            - SpringBoot应用程序日志方案: 开发语言/Java开发技术/SpringBoot应用程序日志方案.md
+    - Docker开发技术:
+        - 环境搭建: Docker开发技术/Ubuntu20.04上安装和使用Docker.md
+    - Kubernetes开发技术:
+        - Kubernetes部署:
+            - 部署Kubernetes: Kubernetes开发技术/Kubernetes部署/部署一套完整的Kubernetes高可用集群.md
+            - 部署:Ingress-nginx: Kubernetes开发技术/Kubernetes部署/通过Ingress-nginx暴露service给外部网络访.md
+            - 部署dashboard: Kubernetes开发技术/Kubernetes部署/k8s通过ingress部署dashboard.md
+            - 部署NFS网络存储: Kubernetes开发技术/Kubernetes部署/Kubernetes集群部署NFS网络存储.md
+            - 部署coredns: Kubernetes开发技术/Kubernetes部署/kubernetes二进制部署coredns.md
+            - 部署Helm3: Kubernetes开发技术/Kubernetes部署/Helm3部署安装.md
+            - 部署harbor: Kubernetes开发技术/Kubernetes部署/Kubernetes集群仓库使用Helm3部署harbor.md
+            - 持久化存储: Kubernetes开发技术/Kubernetes部署/一文带你深入了解K8S持久化存储解决方案.md
+            - 提供动态分配卷: Kubernetes开发技术/Kubernetes部署/Kubernetes中部署NFSProvisioner为NFS提供动态分配卷.md
+            - tab指令: Kubernetes开发技术/Kubernetes部署/解决k8s命令tab不管用.md
+            - pod通信: Kubernetes开发技术/Kubernetes部署/k8s集群外的主机访问pod的解决方案.md
+        - Helm软件包管理器:
+            - 环境搭建: Kubernetes开发技术/Helm软件包管理器/环境搭建.md
+        - Harbor镜像仓库:
+            - 环境搭建: Kubernetes开发技术/Harbor镜像仓库/环境搭建.md
+        - KongAPI网关:
+            - K8s方式安装部署: Kubernetes开发技术/KongAPI网关/K8s方式安装部署.md
+            - Konga可视化工具部署: Kubernetes开发技术/KongAPI网关/Konga可视化工具部署.md
+            - Kong参考指南: Kubernetes开发技术/KongAPI网关/Kong参考指南.md
+            - 跨域请求: Kubernetes开发技术/KongAPI网关/跨域请求.md  
+    - 持续集成:
+        - Drone: 
+            - Docker部署Drone: 持续集成/Drone/Docker部署drone.md
+        - Jenkins:
+            - 自动化部署SpringBoot项目:  持续集成/Jenkins/Jenkins自动化部署SpringBoot项目.md         
+    - 文档管理:
+        - MkDocs文档系统:
+            - 系统搭建: 文档管理/MkDocs文档系统/系统搭建.md
+            - 编译与部署: 文档管理/MkDocs文档系统/编译与部署.md
+            - 使用指南: 文档管理/MkDocs文档系统/使用指南.md
+        - Markdown文档编写指南: 文档管理/Markdown文档编写指南.md
+        - Seafile文件服务器搭建: 文档管理/Seafile文件服务器搭建.md                  
+    - 领域驱动设计:
+        - 参考系列文章: 领域驱动设计/参考系列文章.md
+        - 开源架构: 领域驱动设计/开源架构.md
+        - 程序目录结构: 领域驱动设计/程序目录结构.md
+        - 内部博客系列:
+            - 1.开篇: 领域驱动设计/内部博客系列/1.开篇.md
+            - 2.聚合: 领域驱动设计/内部博客系列/2.聚合.md
+            - 3.存储库: 领域驱动设计/内部博客系列/3.存储库.md
+            - 4.领域服务: 领域驱动设计/内部博客系列/4.领域服务.md
+            - 5.应用服务: 领域驱动设计/内部博客系列/5.应用服务.md
+            - 6.六边形架构: 领域驱动设计/内部博客系列/6.六边形架构.md
+    - 操作系统相关:     
+        - Ubuntu相关知识:
+            - Ubuntu修改DNS: 操作系统相关知识/Ubuntu/Ubuntu修改DNS.md  
+            - 定制ubuntu_iso镜像: 操作系统相关知识/Ubuntu/使用Cubic定制ubuntu_iso镜像.md  
+            - Ubuntu16.04导入根证书: 操作系统相关知识/Ubuntu/Ubuntu16.04导入根证书.md 
+            - 64位Ubuntu兼容32位程序: 操作系统相关知识/Ubuntu/Ubuntu16.04(64位)兼容32位程序.md 
+            - 桌面左侧任务栏到屏幕底部: 操作系统相关知识/Ubuntu/移动Ubuntu16.04桌面左侧任务栏到屏幕底部.md
+        - Windows相关知识:
+            - Windows系统下载网站: 操作系统相关知识/Windows/Windows系统下载网站(推荐).md
+            - 使用NSIS制作安装包: 操作系统相关知识/Windows/使用NSIS制作安装包.md
+        - 再生龙:
+            - 再生龙备份还原操作系统: 操作系统相关知识/再生龙/再生龙备份还原操作系统.md
+theme:
+    name: 'material'
+    favicon: assets/image/favicon.ico
+    logo: assets/image/favicon.ico
+    feature:
+        tabs: false
+
+markdown_extensions:
+    - admonition
+    - codehilite:
+        linenums: true
+        guess_lang: false
+    - toc:
+        permalink: true
+    - footnotes
+    - pymdownx.superfences
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tilde
+    - pymdownx.tasklist:
+        custom_checkbox: true

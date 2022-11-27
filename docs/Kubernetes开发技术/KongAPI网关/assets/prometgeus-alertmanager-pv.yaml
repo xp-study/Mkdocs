@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: prometheus-alertmanager
+  namespace: monitoring
+spec:
+  capacity: 
+    storage: 2Gi
+  accessModes:   
+    - ReadWriteOnce
+  storageClassName: prometheus-data
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /data/k8s/alertmanager
+    server: 172.31.10.252

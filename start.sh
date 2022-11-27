@@ -1,4 +1,5 @@
 #!/bin/bash
 
+docker build . -t local-mkdocs
 
-mkdocs serve --dev-addr=0.0.0.0:10000 &
+docker run -it local-mkdocs /bin/sh

@@ -2,4 +2,4 @@
 
 docker build . -t local-mkdocs
 
-docker run -it local-mkdocs /bin/sh
+docker run local-mkdocs /bin/sh &

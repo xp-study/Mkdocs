@@ -1,3 +1,3 @@
 #!/bin/sh
 
-mkdocs serve --dev-addr=127.0.0.1:10000 
+mkdocs serve --dev-addr=0.0.0.0:10000 

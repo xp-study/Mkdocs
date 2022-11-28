@@ -56,6 +56,8 @@ nav:
     - 持续集成:
         - Drone: 
             - Docker部署Drone: 持续集成/Drone/Docker部署drone.md
+            - Drone使用私有镜像仓库: 持续集成/Drone/Drone使用harbor私有镜像仓库拉取镜像.md
+            - Drone相关的环境变量: 持续集成/Drone/Drone相关的环境变量.md
         - Jenkins:
             - 自动化部署SpringBoot项目:  持续集成/Jenkins/Jenkins自动化部署SpringBoot项目.md         
     - 文档管理:

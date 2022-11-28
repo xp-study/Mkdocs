@@ -29,7 +29,7 @@ DRONE_UI_PASSWORD=root    // 设定UI界面密码
 DRONE_UI_REALM=DroneRealm // 设定基本的authentication realm
 ```
 
-### pineline专用
+### pineline
 
 ```shell
 CI=true         // 将当前环境标识为持续集成环境（Continuous Integration environment）

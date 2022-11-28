@@ -15,6 +15,8 @@ nav:
         - Go语言Ubuntu开发环境搭建: 开发环境搭建/Go语言Ubuntu开发环境搭建.md
         - Go语言Windows开发环境搭建: 开发环境搭建/Go语言Windows开发环境搭建.md
         - Node.js开发环境搭建: 开发环境搭建/Node.js开发环境搭建.md
+        - Nginx环境搭建: 开发环境搭建/Nginx环境搭建.md
+        - Vue.js开发环境搭建: 开发环境搭建/Vue.js开发环境搭建.md
     - 开发语言:
         - Go语言开发:
             - 模块管理: 开发语言/Go语言开发/模块管理.md
@@ -43,15 +45,14 @@ nav:
             - 提供动态分配卷: Kubernetes开发技术/Kubernetes部署/Kubernetes中部署NFSProvisioner为NFS提供动态分配卷.md
             - tab指令: Kubernetes开发技术/Kubernetes部署/解决k8s命令tab不管用.md
             - pod通信: Kubernetes开发技术/Kubernetes部署/k8s集群外的主机访问pod的解决方案.md
-        - Helm软件包管理器:
-            - 环境搭建: Kubernetes开发技术/Helm软件包管理器/环境搭建.md
-        - Harbor镜像仓库:
-            - 环境搭建: Kubernetes开发技术/Harbor镜像仓库/环境搭建.md
         - KongAPI网关:
             - K8s方式安装部署: Kubernetes开发技术/KongAPI网关/K8s方式安装部署.md
             - Konga可视化工具部署: Kubernetes开发技术/KongAPI网关/Konga可视化工具部署.md
             - Kong参考指南: Kubernetes开发技术/KongAPI网关/Kong参考指南.md
             - 跨域请求: Kubernetes开发技术/KongAPI网关/跨域请求.md  
+            - Kong认证插件: Kubernetes开发技术/KongAPI网关/Kong认证插件.md 
+            - kong日志插件: Kubernetes开发技术/KongAPI网关/kong日志插件.md
+            - 网关监控方案: Kubernetes开发技术/KongAPI网关/网关监控方案.md
     - 持续集成:
         - Drone: 
             - Docker部署Drone: 持续集成/Drone/Docker部署drone.md
@@ -63,7 +64,9 @@ nav:
             - 编译与部署: 文档管理/MkDocs文档系统/编译与部署.md
             - 使用指南: 文档管理/MkDocs文档系统/使用指南.md
         - Markdown文档编写指南: 文档管理/Markdown文档编写指南.md
-        - Seafile文件服务器搭建: 文档管理/Seafile文件服务器搭建.md                  
+        - Seafile文件服务器搭建: 文档管理/Seafile文件服务器搭建.md  
+    - 设计模式(23种):
+        - 装饰器模式: 设计模式/装饰器模式.md
     - 领域驱动设计:
         - 参考系列文章: 领域驱动设计/参考系列文章.md
         - 开源架构: 领域驱动设计/开源架构.md

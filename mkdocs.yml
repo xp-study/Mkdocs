@@ -32,8 +32,8 @@ nav:
             - SpringBoot应用程序日志方案: 开发语言/Java开发技术/SpringBoot应用程序日志方案.md
     - 计算机网络:
         - HTTP/HTTPS:
-            - 30张图解HTTP常见的面试题: 计算机网络/HTTP与HTTPS/30张图解HTTP常见的面试题/30张图解HTTP常见的面试题.md
-            - URI和URL区别和关联: 计算机网络/HTTP与HTTPS/URI和URL区别和关联/URI和URL区别和关联.md
+            - 30张图解HTTP常见的面试题: 计算机网络/HTTP与HTTPS/30张图解HTTP常见的面试题.md
+            - URI和URL区别和关联: 计算机网络/HTTP与HTTPS/URI和URL区别和关联.md
     - Docker开发技术:
         - 环境搭建: Docker开发技术/Ubuntu20.04上安装和使用Docker.md
     - Kubernetes开发技术:

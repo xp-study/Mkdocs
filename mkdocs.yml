@@ -6,12 +6,7 @@ nav:
         - 安装虚拟机版本Ubuntu: 开发环境搭建/安装虚拟机版本Ubuntu/安装虚拟机版本Ubuntu.md
         - VSCode开发环境搭建:
             - 安装配置: 开发环境搭建/VSCode开发环境搭建/安装配置.md
-            - 常用开发插件: 开发环境搭建/VSCode开发环境搭建/常用开发插件.md
-        - Gitlab服务器环境搭建: 
-            - 使用Docker部署Gitlab: 开发环境搭建/Gitlab环境搭建/使用Docker部署Gitlab.md
-            - gitlab设置中文:  开发环境搭建/Gitlab环境搭建/gitlab设置中文.md
-            - Gitlab定时备份: 开发环境搭建/Gitlab环境搭建/Gitlab定时备份.md
-            - Gitlab配置邮件服务: 开发环境搭建/Gitlab环境搭建/Gitlab配置邮件服务.md            
+            - 常用开发插件: 开发环境搭建/VSCode开发环境搭建/常用开发插件.md          
         - Node.js开发环境搭建: 开发环境搭建/Node.js开发环境搭建.md
         - Nginx环境搭建: 开发环境搭建/Nginx环境搭建.md
         - Vue.js开发环境搭建: 开发环境搭建/Vue.js开发环境搭建.md
@@ -74,6 +69,11 @@ nav:
             - 使用指南: 文档管理/MkDocs文档系统/使用指南.md
         - Markdown文档编写指南: 文档管理/Markdown文档编写指南.md
         - Seafile文件服务器搭建: 文档管理/Seafile文件服务器搭建.md  
+    - Gitlab私有仓库搭建: 
+        - 使用Docker部署Gitlab: Gitlab私有仓库搭建/使用Docker部署Gitlab.md
+        - gitlab设置中文:  Gitlab私有仓库搭建/gitlab设置中文.md
+        - Gitlab定时备份: Gitlab私有仓库搭建/Gitlab定时备份.md
+        - Gitlab配置邮件服务: Gitlab私有仓库搭建/Gitlab配置邮件服务.md
     - 设计模式(23种):
         - 装饰器模式: 设计模式/装饰器模式.md
     - 领域驱动设计:

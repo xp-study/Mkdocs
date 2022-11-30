@@ -70,7 +70,7 @@ nav:
             - Kong认证插件: Kubernetes开发技术/KongAPI网关/Kong认证插件.md 
             - kong日志插件: Kubernetes开发技术/KongAPI网关/kong日志插件.md
             - 网关监控方案: Kubernetes开发技术/KongAPI网关/网关监控方案.md
-    - 持续集成:
+    - 持续集成(CI/CD):
         - Drone: 
             - Docker部署Drone: 持续集成/Drone/Docker部署drone.md
             - Drone使用私有镜像仓库: 持续集成/Drone/Drone使用harbor私有镜像仓库拉取镜像.md

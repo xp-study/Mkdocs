@@ -92,6 +92,9 @@ nav:
             - 使用NSIS制作安装包: 操作系统相关知识/Windows/使用NSIS制作安装包.md
         - 再生龙:
             - 再生龙备份还原操作系统: 操作系统相关知识/再生龙/再生龙备份还原操作系统.md
+    - 计算机网络:
+        - HTTP/HTTPS:
+            - 30张图解HTTP常见的面试题:计算机网络/HTTP与HTTPS/30张图解HTTP常见的面试题.md
 theme:
     name: 'material'
     favicon: assets/image/favicon.ico

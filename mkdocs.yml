@@ -35,7 +35,7 @@ nav:
             - 30张图解HTTP常见的面试题: 计算机网络/HTTP与HTTPS/30张图解HTTP常见的面试题.md
             - URI和URL区别和关联: 计算机网络/HTTP与HTTPS/URI和URL区别和关联.md
     - 分布式系统:
-        - 一致性Hash算法: 一致性Hash算法:分布式系统/一致性Hash算法.md
+        - 一致性Hash算法: 分布式系统/一致性Hash算法.md
     - 设计模式(23种):
         - 装饰器模式: 设计模式/装饰器模式.md
     - 领域驱动设计:

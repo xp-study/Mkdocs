@@ -27,9 +27,6 @@ nav:
             - 使用IDEA配置Maven:  开发语言/Java开发技术/使用IDEA配置Maven.md
             - SpringBoot第一个程序: 开发语言/Java开发技术/SpringBoot第一个程序.md
             - Dockerfile部署SpringBoot项目: 开发语言/Java开发技术/IDEA连接远程服务器Docker部署SpringBoot项目.md
-            - 创建SpringBoot多模块工程: 开发语言/Java开发技术/创建SpringBoot多模块工程.md
-            - JavaBean规范: 开发语言/Java开发技术/JavaBean规范.md
-            - SpringBoot应用程序日志方案: 开发语言/Java开发技术/SpringBoot应用程序日志方案.md
     - 计算机网络:
         - HTTP/HTTPS:
             - 30张图解HTTP常见的面试题: 计算机网络/HTTP与HTTPS/30张图解HTTP常见的面试题.md

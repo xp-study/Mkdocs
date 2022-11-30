@@ -28,6 +28,7 @@ nav:
         - Mysql:
             - 如何开启慢Sql日志: 中间件/Mysql/如何开启慢Sql日志.md
             - 如何设置数据表字符编码: 中间件/Mysql/如何设置数据表字符编码.md
+    - 计算机基础:
     - 计算机网络:
         - HTTP/HTTPS:
             - 30张图解HTTP常见的面试题: 计算机网络/HTTP与HTTPS/30张图解HTTP常见的面试题.md

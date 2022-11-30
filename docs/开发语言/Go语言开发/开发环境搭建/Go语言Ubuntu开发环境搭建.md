@@ -142,7 +142,7 @@ ipconfig /flushdns
 
 打开vscode,按下`ctrl + shift + x`,进入Vscode扩展工具下载界面，输入go查询，安装如下图所示工具：
 
-![VscodeGo工具下载](./assets/VscodeGo工具下载.png)
+![VscodeGo工具下载](./assets/Go语言Ubuntu开发环境搭建/VscodeGo工具下载.png)
 
 ### 配置Go语言相关设置
 
@@ -150,7 +150,7 @@ ipconfig /flushdns
 
 `File` -> `Preferences` -> `Settings`
 
-![设置GoPath](./assets/设置GoPath.png)
+![设置GoPath](./assets/Go语言Ubuntu开发环境搭建/设置GoPath.png)
 
 设置好Tool GoPath 路径后重启VSCode生效
 

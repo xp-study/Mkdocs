@@ -12,15 +12,16 @@ nav:
             - gitlab设置中文:  开发环境搭建/Gitlab环境搭建/gitlab设置中文.md
             - Gitlab定时备份: 开发环境搭建/Gitlab环境搭建/Gitlab定时备份.md
             - Gitlab配置邮件服务: 开发环境搭建/Gitlab环境搭建/Gitlab配置邮件服务.md            
-        - Go语言Ubuntu开发环境搭建: 开发环境搭建/Go语言Ubuntu开发环境搭建.md
-        - Go语言Windows开发环境搭建: 开发环境搭建/Go语言Windows开发环境搭建.md
         - Node.js开发环境搭建: 开发环境搭建/Node.js开发环境搭建.md
         - Nginx环境搭建: 开发环境搭建/Nginx环境搭建.md
         - Vue.js开发环境搭建: 开发环境搭建/Vue.js开发环境搭建.md
     - 开发语言:
         - Go语言开发:
-            - 模块管理: 开发语言/Go语言开发/模块管理.md
-            - 可执行文件压缩: 开发语言/Go语言开发/可执行文件压缩.md
+            - 开发环境搭建:
+                - Go语言Ubuntu开发环境搭建: 开发语言/Go语言开发/开发环境搭建/Go语言Ubuntu开发环境搭建.md
+                - Go语言Windows开发环境搭建: 开发语言/Go语言开发/开发环境搭建/Go语言Windows开发环境搭建.md
+                - 模块管理: 开发语言/Go语言开发/开发环境搭建/模块管理.md
+                - 可执行文件压缩: 开发语言/Go语言开发/开发环境搭建/可执行文件压缩.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

@@ -36,8 +36,8 @@ nav:
             - URI和URL区别和关联: 计算机网络/HTTP与HTTPS/URI和URL区别和关联.md
     - 中间件:
         - Mysql:
-            - 慢Sql日志总结: 中间件/Mysql/MySQL慢查询日志总结.md
-            - 如何设置Mysql编码: 中间件/Mysql/如何给女朋友解释为什么不能在MySQL中使用UTF-8编码.md
+            - 如何开启慢Sql日志: 中间件/Mysql/如何开启慢Sql日志.md
+            - 如何设置数据表字符编码: 中间件/Mysql/如何设置数据表字符编码.md
     - Docker开发技术:
         - 环境搭建: Docker开发技术/Ubuntu20.04上安装和使用Docker.md
     - Kubernetes开发技术:

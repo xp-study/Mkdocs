@@ -22,11 +22,11 @@ nav:
             - 模块管理: 开发语言/Go语言开发/模块管理.md
             - 可执行文件压缩: 开发语言/Go语言开发/可执行文件压缩.md
         - Java语言开发:
-            - Linux下安装JDK: 开发语言/Java开发技术/Ubuntu20.04安装JDK(java环境).md
-            - Linux下配置Maven环境: 开发语言/Java开发技术/Ubuntu20.04下配置Maven环境.md
-            - 使用IDEA配置Maven:  开发语言/Java开发技术/使用IDEA配置Maven.md
-            - SpringBoot第一个程序: 开发语言/Java开发技术/SpringBoot第一个程序.md
-            - Dockerfile部署SpringBoot项目: 开发语言/Java开发技术/IDEA连接远程服务器Docker部署SpringBoot项目.md
+            - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md
+            - Linux下配置Maven环境: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04下配置Maven环境.md
+            - 使用IDEA配置Maven:  开发语言/Java语言开发/开发环境搭建/使用IDEA配置Maven.md
+            - SpringBoot第一个程序: 开发语言/Java语言开发/开发环境搭建/SpringBoot第一个程序.md
+            - Dockerfile部署SpringBoot项目: 开发语言/Java语言开发/开发环境搭建/IDEA连接远程服务器Docker部署SpringBoot项目.md
     - 计算机网络:
         - HTTP/HTTPS:
             - 30张图解HTTP常见的面试题: 计算机网络/HTTP与HTTPS/30张图解HTTP常见的面试题.md

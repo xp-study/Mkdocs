@@ -37,6 +37,7 @@ nav:
             - 30张图解HTTP常见的面试题: 计算机网络/HTTP与HTTPS/30张图解HTTP常见的面试题.md
             - URI和URL区别和关联: 计算机网络/HTTP与HTTPS/URI和URL区别和关联.md
             - 有了HTTP协议为什么还要有websocket协议: 计算机网络/HTTP与HTTPS/有了HTTP协议为什么还要有websocket协议.md
+            - HTTP的Keep-Alive与TCP的Keep-Alive的区别: 计算机网络/HTTP与HTTPS/HTTP的Keep-Alive与TCP的Keep-Alive的区别.md
     - 微服务与分布式:
         - 微服务和分布式的区别和联系: 微服务与分布式/微服务和分布式的区别和联系.md
         - HTTP和RPC的区别: 微服务与分布式/HTTP和RPC的区别.md

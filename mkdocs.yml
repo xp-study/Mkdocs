@@ -110,6 +110,7 @@ theme:
     name: 'material'
     favicon: assets/image/favicon.ico
     logo: assets/image/favicon.ico
+    link: https://twitter.com/squidfunk
     feature:
         tabs: false
 

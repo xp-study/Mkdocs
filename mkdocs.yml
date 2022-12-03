@@ -106,6 +106,8 @@ nav:
             - 使用NSIS制作安装包: 操作系统相关知识/Windows/使用NSIS制作安装包.md
         - 再生龙:
             - 再生龙备份还原操作系统: 操作系统相关知识/再生龙/再生龙备份还原操作系统.md
+extra_css:
+    - assets/css/extra.css
 theme:
     name: 'material'
     favicon: assets/image/favicon.ico

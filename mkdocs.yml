@@ -1,4 +1,5 @@
 site_name: 许鹏的学习文档
+site_favicon: favicon.ico
 nav:
     - 目录: index.md
     - 开发环境搭建:
@@ -101,7 +102,6 @@ nav:
             - 再生龙备份还原操作系统: 操作系统相关知识/再生龙/再生龙备份还原操作系统.md
 theme:
     name: 'material'
-    site_favicon: favicon.ico
     favicon: favicon.ico
     logo: favicon.ico
     feature:

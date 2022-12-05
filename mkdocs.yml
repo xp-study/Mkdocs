@@ -102,7 +102,7 @@ nav:
 theme:
     name: 'material'
     favicon: favicon.ico
-    logo: favicon.ico
+    logo: logo.jpg
     feature:
         tabs: false
 

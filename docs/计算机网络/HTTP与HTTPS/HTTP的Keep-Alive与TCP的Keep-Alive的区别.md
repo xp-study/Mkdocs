@@ -92,7 +92,7 @@ TCP 的 Keepalive 这东西其实就是 **TCP 的保活机制**，它的工作�
 
 注意，应用程序若想使用 TCP 保活机制需要通过 socket 接口设置 `SO_KEEPALIVE` 选项才能够生效，如果没有设置，那么就无法使用 TCP 保活机制。
 
-## [#](https://xiaolincoding.com/network/3_tcp/tcp_http_keepalive.html#总结)总结
+## 总结
 
 HTTP 的 Keep-Alive 也叫 HTTP 长连接，该功能是由「应用程序」实现的，可以使得用同一个 TCP 连接来发送和接收多个 HTTP 请求/应答，减少了 HTTP 短连接带来的多次 TCP 连接建立和释放的开销。
 

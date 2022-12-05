@@ -103,8 +103,7 @@ theme:
     name: 'material'
     favicon: favicon.ico
     logo: favicon.ico
-    feature:
-        tabs: true
+    icon: favicon.ico
 
 markdown_extensions:
     - admonition

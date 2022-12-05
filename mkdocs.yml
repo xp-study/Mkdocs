@@ -1,5 +1,4 @@
 site_name: 许鹏的学习文档
-site_favicon: favicon.ico
 nav:
     - 目录: index.md
     - 开发环境搭建:
@@ -105,7 +104,7 @@ theme:
     favicon: favicon.ico
     logo: favicon.ico
     feature:
-        tabs: false
+        tabs: true
 
 markdown_extensions:
     - admonition

@@ -101,9 +101,10 @@ nav:
             - 再生龙备份还原操作系统: 操作系统相关知识/再生龙/再生龙备份还原操作系统.md
 theme:
     name: 'material'
-    favicon: favicon.ico
-    logo: favicon.ico
-    icon: favicon.ico
+    favicon: assets/image/favicon.ico
+    logo: assets/image/favicon.ico
+    feature:
+        tabs: false
 
 markdown_extensions:
     - admonition

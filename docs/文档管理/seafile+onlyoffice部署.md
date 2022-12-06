@@ -114,4 +114,4 @@ ONLYOFFICE_EDIT_FILE_EXTENSION = ('docx', 'pptx', 'xlsx')
 
 ## 参考文档
 
-[Seafile与Mkdocs部署参考文档点击这里](https://cloud.seafile.com/published/seafile-manual-cn/docker/%E7%94%A8Docker%E9%83%A8%E7%BD%B2Seafile.md)
+[Seafile与Onlyoffice部署参考文档点击这里](https://cloud.seafile.com/published/seafile-manual-cn/docker/%E7%94%A8Docker%E9%83%A8%E7%BD%B2Seafile.md)

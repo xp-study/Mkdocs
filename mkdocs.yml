@@ -95,7 +95,7 @@ nav:
         - Jenkins:
             - 自动化部署SpringBoot项目:  持续集成/Jenkins/Jenkins自动化部署SpringBoot项目.md         
     - 文档管理:
-        - Seafile与Mkdocs部署: 文档管理/Seafile与Mkdocs部署.md
+        - Seafile+Onlyoffice部署: 文档管理/seafile+onlyoffice部署.md
     - 代码私有仓库部署: 
         - 使用Docker部署Gitlab: Gitlab私有仓库搭建/使用Docker部署Gitlab.md
         - gitlab设置中文:  Gitlab私有仓库搭建/gitlab设置中文.md

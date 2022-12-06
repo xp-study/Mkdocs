@@ -57,6 +57,8 @@ networks:
   seafile-net:
 ```
 
+* 部署
+
 ```shell
 docker-compose up -d
 ```
@@ -69,7 +71,7 @@ docker-compose up -d
 mkdir -p /opt/onlyoffice{logs,data,lib,database,fonts}
 ```
 
-
+* 创建 `docker-compose.yml`文件,文件内容如下:
 
 ```json
 version: '2.0'
@@ -86,6 +88,8 @@ services:
       - /opt/onlyoffice/database:/var/lib/postgresql
       - /opt/onlyoffice/fonts:/usr/share/fonts
 ```
+
+* 部署
 
 ```shell
 docker-compose up -d

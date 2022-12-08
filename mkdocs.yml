@@ -52,6 +52,8 @@ nav:
                     - for循环语句: 开发语言/Go语言开发/Go语言基础/流程控制/for循环语句.md
                     - goto无条件跳转: 开发语言/Go语言开发/Go语言基础/流程控制/goto无条件跳转.md
                     - defer延迟调用: 开发语言/Go语言开发/Go语言基础/流程控制/defer延迟调用.md
+                - 关键字: 
+                    - make和new的区别: 开发语言/Go语言开发/Go语言基础/关键字/make和new的区别.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

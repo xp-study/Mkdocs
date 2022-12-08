@@ -1,6 +1,6 @@
 # byte、rune与string
 
-**1. byte 与 rune**
+## 1. byte 与 rune
 
 **byte**，占用1个节字，就 8 个比特位，所以它和 `uint8` 类型本质上没有区别，它表示的是 ACSII 表中的一个字符。
 

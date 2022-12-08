@@ -37,6 +37,7 @@ nav:
                     - 变量创建的六种方式: 开发语言/Go语言开发/Go语言基础/变量/变量创建的六种方式.md
                 - 数据类型: 
                     - 整形与浮点型: 开发语言/Go语言开发/Go语言基础/数据类型/数据类型-整形与浮点型.md
+                    - byte、rune与string: 开发语言/Go语言开发/Go语言基础/数据类型/byte、rune与string.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

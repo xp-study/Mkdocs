@@ -62,6 +62,8 @@ nav:
                     - WaitGroup: 开发语言/Go语言开发/Go语言基础/协程/WaitGroup.md
                     - 互斥锁和读写锁: 开发语言/Go语言开发/Go语言基础/协程/互斥锁和读写锁.md
                     - panic和recover: 开发语言/Go语言开发/Go语言基础/协程/panic和recover.md
+                - 版本管理:
+                    - 超详细解读GoModules前世今生及入门使用: 开发语言/Go语言开发/Go语言基础/版本管理/超详细解读GoModules前世今生及入门使用.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

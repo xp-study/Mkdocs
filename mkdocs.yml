@@ -56,6 +56,8 @@ nav:
                     - make和new的区别: 开发语言/Go语言开发/Go语言基础/关键字/make和new的区别.md
                 - 语句块与作用域:
                     - 一篇文章理解Go里的语句块与作用域: 开发语言/Go语言开发/Go语言基础/语句块与作用域/一篇文章理解Go里的语句块与作用域.md
+                - 协程:
+                    - goroutine​: 开发语言/Go语言开发/Go语言基础/协程/goroutine​.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

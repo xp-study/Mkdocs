@@ -10,6 +10,21 @@ nav:
         - Node.js开发环境搭建: 开发环境搭建/Node.js开发环境搭建.md
         - Nginx环境搭建: 开发环境搭建/Nginx环境搭建.md
         - Vue.js开发环境搭建: 开发环境搭建/Vue.js开发环境搭建.md
+    - 计算机基础:
+        - 计算机网络:
+            - HTTP/HTTPS:
+                - 30张图解HTTP常见的面试题: 计算机基础/计算机网络/HTTP与HTTPS/30张图解HTTP常见的面试题.md
+                - URI和URL区别和关联: 计算机基础/计算机网络/HTTP与HTTPS/URI和URL区别和关联.md
+                - 有了HTTP协议为什么还要有websocket协议: 计算机基础/计算机网络/HTTP与HTTPS/有了HTTP协议为什么还要有websocket协议.md
+                - HTTP的Keep-Alive与TCP的Keep-Alive的区别: 计算机基础/计算机网络/HTTP与HTTPS/HTTP的Keep-Alive与TCP的Keep-Alive的区别.md
+        - 计算机组成原理: 
+            - 数据的表示与存储:
+                - 浮点类型在内存中如何存储: 计算机基础/计算机组成原理/数据的表示与存储/浮点类型在内存中如何存储.md
+            - 计算机硬件结构: 
+                - CPU是如何执行程序的: 计算机基础/计算机组成原理/计算机硬件结构/CPU是如何执行程序的.md
+        - 计算机操作系统:
+            - 内存管理:
+                - 为什么要有虚拟机内存: 计算机基础/操作系统/内存管理/为什么要有虚拟机内存.md
     - 开发语言:
         - Go语言开发:
             - 开发环境搭建:
@@ -31,21 +46,6 @@ nav:
             - 如何开启慢Sql日志: 中间件/Mysql/如何开启慢Sql日志.md
             - 如何设置数据表字符编码: 中间件/Mysql/如何设置数据表字符编码.md
             - Mysql中Null值是如何存放的: 中间件/Mysql/Mysql中Null值是如何存放的.md
-    - 计算机基础:
-        - 计算机网络:
-            - HTTP/HTTPS:
-                - 30张图解HTTP常见的面试题: 计算机基础/计算机网络/HTTP与HTTPS/30张图解HTTP常见的面试题.md
-                - URI和URL区别和关联: 计算机基础/计算机网络/HTTP与HTTPS/URI和URL区别和关联.md
-                - 有了HTTP协议为什么还要有websocket协议: 计算机基础/计算机网络/HTTP与HTTPS/有了HTTP协议为什么还要有websocket协议.md
-                - HTTP的Keep-Alive与TCP的Keep-Alive的区别: 计算机基础/计算机网络/HTTP与HTTPS/HTTP的Keep-Alive与TCP的Keep-Alive的区别.md
-        - 计算机组成原理: 
-            - 数据的表示与存储:
-                - 浮点类型在内存中如何存储: 计算机基础/计算机组成原理/数据的表示与存储/浮点类型在内存中如何存储.md
-            - 计算机硬件结构: 
-                - CPU是如何执行程序的: 计算机基础/计算机组成原理/计算机硬件结构/CPU是如何执行程序的.md
-        - 计算机操作系统:
-            - 内存管理:
-                - 为什么要有虚拟机内存: 计算机基础/操作系统/内存管理/为什么要有虚拟机内存.md
     - 微服务与分布式:
         - 康威定律: 微服务与分布式/康威定律.md
         - 分布式ACID、CAP、BASE理论: 微服务与分布式/分布式ACID、CAP、BASE理论.md

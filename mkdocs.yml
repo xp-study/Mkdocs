@@ -122,6 +122,7 @@ nav:
         - gitlab设置中文:  Gitlab私有仓库搭建/gitlab设置中文.md
         - Gitlab定时备份: Gitlab私有仓库搭建/Gitlab定时备份.md
         - Gitlab配置邮件服务: Gitlab私有仓库搭建/Gitlab配置邮件服务.md
+        - Gitlab配置HTTPS: Gitlab私有仓库搭建/Gitlab配置HTTPS.md
     - 操作系统相关:     
         - Ubuntu相关知识:
             - Ubuntu修改DNS: 操作系统相关知识/Ubuntu/Ubuntu修改DNS.md  

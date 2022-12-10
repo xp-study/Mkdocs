@@ -46,7 +46,7 @@ Drone部署需要安装`drone-server`（Drone与流行的源代码控制管理�
 
 ```shell
   docker run  --volume=/opt/drone:/data \
-  --env=DRONE_GITLAB_SERVER=http://gitlab.wsh-study.com/ \ 
+  --env=DRONE_GITLAB_SERVER=https://gitlab.wsh-study.com/ \ 
   --env=DRONE_GITLAB_CLIENT_ID=b5833fe6c65d74c4f648e893c1426e9e66d97304d56bad86360eddeb59371713 \ 
   --env=DRONE_GITLAB_CLIENT_SECRET=6fdffd3de1b66e1053d482830e690df630bdf624490b4312e15a81879acfc14e \ 
   --env=DRONE_RPC_SECRET=1160fe98c5fcf55a3ddcdba21bae59a8 \ 

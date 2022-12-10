@@ -45,9 +45,8 @@ Go 语言拥有一些不需要进行导入操作就可以使用的内置函数�
 ## 1.3. 内置接口error
 
 ```go
-    type error interface { //只要实现了Error()函数，返回值为String的都实现了err接口
-
+    // 只要实现了Error()函数，返回值为String的都实现了err接口
+    type error interface { 
             Error()    String
-
     }
 ```

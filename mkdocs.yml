@@ -35,6 +35,7 @@ nav:
             - Go基础:
                 - Go语言的主要特征: 开发语言/Go语言开发/Go基础/Go语言的主要特征.md
                 - Golang内置类型和函数: 开发语言/Go语言开发/Go基础/Golang内置类型和函数.md
+                - Init函数和main函数: 开发语言/Go语言开发/Go基础/Init函数和main函数.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

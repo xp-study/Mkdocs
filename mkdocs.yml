@@ -44,6 +44,7 @@ nav:
                 - 切片Slice: 开发语言/Go语言开发/Go基础/切片Slice.md
                 - Slice底层实现: 开发语言/Go语言开发/Go基础/Slice底层实现.md
                 - 指针: 开发语言/Go语言开发/Go基础/指针.md
+                - Map: 开发语言/Go语言开发/Go基础/Map.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

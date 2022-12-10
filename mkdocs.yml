@@ -54,6 +54,10 @@ nav:
                 - 循环语句for: 开发语言/Go语言开发/流程控制/循环语句for.md
                 - 循环语句range: 开发语言/Go语言开发/流程控制/循环语句range.md
                 - 循环控制Goto、Break、Continue: 开发语言/Go语言开发/流程控制/循环控制Goto、Break、Continue.md
+            - 函数:
+                - 函数定义: 开发语言/Go语言开发/函数/函数定义.md
+                - 参数: 开发语言/Go语言开发/函数/参数.md
+                - 返回值: 开发语言/Go语言开发/函数/返回值.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

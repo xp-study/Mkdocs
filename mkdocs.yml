@@ -41,6 +41,7 @@ nav:
                 - 下划线: 开发语言/Go语言开发/Go基础/下划线.md
                 - 变量和常量: 开发语言/Go语言开发/Go基础/变量和常量.md
                 - 基本类型: 开发语言/Go语言开发/Go基础/基本类型.md
+                - 切片Slice: 开发语言/Go语言开发/Go基础/切片Slice.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

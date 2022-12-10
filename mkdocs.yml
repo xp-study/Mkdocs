@@ -49,6 +49,9 @@ nav:
                 - 结构体: 开发语言/Go语言开发/Go基础/结构体.md
             - 流程控制:
                 - 条件语句if: 开发语言/Go语言开发/流程控制/条件语句if.md
+                - 条件语句switch: 开发语言/Go语言开发/流程控制/条件语句switch.md
+                - 条件语句select: 开发语言/Go语言开发/流程控制/条件语句select.md
+                - 循环语句for: 开发语言/Go语言开发/流程控制/循环语句for.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

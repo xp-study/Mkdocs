@@ -161,30 +161,6 @@ s := make([]byte, 200)
 ptr := unsafe.Pointer(&s[0])
 ```
 
-如果反过来呢？从 Go 的内存地址中构造一个 slice。
-
-```go
-var ptr unsafe.Pointer
-var s1 = struct {
-    addr uintptr
-    len int
-    cap int
-}{ptr, length, length}
-s := *(*[]byte)(unsafe.Pointer(&s1))
-```
-
-构造一个虚拟的结构体，把 slice 的数据结构拼出来。
-
-当然还有更加直接的方法，在 Go 的反射中就存在一个与之对应的数据结构 SliceHeader，我们可以用它来构造一个 slice
-
-```go
-    var o []byte
-    sliceHeader := (*reflect.SliceHeader)((unsafe.Pointer(&o)))
-    sliceHeader.Cap = length
-    sliceHeader.Len = length
-    sliceHeader.Data = uintptr(ptr)
-```
-
 ### 1.1.3. 创建切片
 
 make 函数允许在运行期动态指定数组长度，绕开了数组类型必须使用编译期常量的限制。

@@ -103,7 +103,7 @@ Go 语言是谷歌 2009 年首次推出并在 2012 年正式发布的一种全�
 
 ### 1.1.8. go 编译问题
 
-`golang`的编译使用命令` go build `, `go install;`除非仅写一个`main`函数，否则还是准备好目录结构；` GOPATH`=工程根目录；其下应创建`src`，`pkg`，`bin`目录，`bin`目录中用于生成可执行文件，`pkg`目录中用于生成.a文件； `golang`中的`import name`，实际是到`GOPATH`中去寻找`name.a`， 使用时是该`name.a`的源码中生命的`package `名字；这个在前面已经介绍过了。
+`golang`的编译使用命令` go build `, `go install;`除非仅写一个`main`函数，否则还是准备好目录结构；` GOPATH`=工程根目录；其下应创建`src`，`pkg`，`bin`目录，`bin`目录中用于生成可执行文件，`pkg`目录中用于生成.a文件； 
 
 注意点：
 

@@ -110,7 +110,7 @@ Go 语言是谷歌 2009 年首次推出并在 2012 年正式发布的一种全�
 ```go
     1.系统编译时 go install abc_name时，系统会到GOPATH的src目录中寻找abc_name目录，然后编译其下的go文件；
 
-    2.同一个目录中所有的go文件的package声明必须相同，所以main方法要单独放一个文件，否则在eclipse和liteide中都会报错；
+    2.同一个目录中所有的go文件的package声明必须相同，所以main方法要单独放一个文件，否则会报错；
     编译报错如下：（假设test目录中有个main.go 和mymath.go,其中main.go声明package为main，mymath.go声明packag 为test);
 
         $ go install test

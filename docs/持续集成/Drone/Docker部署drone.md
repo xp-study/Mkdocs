@@ -45,19 +45,21 @@ Drone部署需要安装`drone-server`（Drone与流行的源代码控制管理�
 - 部署drone-server：
 
 ```shell
-  docker run  --volume=/opt/drone:/data \
-  --env=DRONE_GITLAB_SERVER=https://gitlab.wsh-study.com/ \ 
-  --env=DRONE_GITLAB_CLIENT_ID=b5833fe6c65d74c4f648e893c1426e9e66d97304d56bad86360eddeb59371713 \ 
-  --env=DRONE_GITLAB_CLIENT_SECRET=6fdffd3de1b66e1053d482830e690df630bdf624490b4312e15a81879acfc14e \ 
-  --env=DRONE_RPC_SECRET=1160fe98c5fcf55a3ddcdba21bae59a8 \ 
-  --env=DRONE_SERVER_HOST=drone.wsh-study.com \ 
-  --env=DRONE_SERVER_PROTO=http \  
-  --publish=8780:80 \
-  --publish=8743:443 \
+  docker run -itd \
+  -v /opt/drone:/data \
+  -e DRONE_GITLAB_SERVER=https://gitlab.wsh-study.com/ \
+  -e DRONE_GITLAB_CLIENT_ID=b5833fe6c65d74c4f648e893c1426e9e66d97304d56bad86360eddeb59371713 \
+  -e DRONE_GITLAB_CLIENT_SECRET=6fdffd3de1b66e1053d482830e690df630bdf624490b4312e15a81879acfc14e \
+  -e DRONE_RPC_SECRET=1160fe98c5fcf55a3ddcdba21bae59a8 \
+  -e DRONE_SERVER_HOST=drone.wsh-study.com \
+  -e DRONE_SERVER_PROTO=http \
+  -e DRONE_USER_CREATE=username:root,admin:true \
+  -p 8780:80 \
+  -p 8743:443 \
   --restart=always \
   --detach=true \
   --name=drone \
-  --env=DRONE_USER_CREATE=username:root,admin:true drone/drone:2
+  drone/drone:2
 ```
 
 ```shell
@@ -74,15 +76,16 @@ Drone部署需要安装`drone-server`（Drone与流行的源代码控制管理�
 - 部署drone-runner
 
 ```shell
-  docker run --detach \  
-  --volume=/var/run/docker.sock:/var/run/docker.sock \
-  --env=DRONE_RPC_PROTO=http \ 
-  --env=DRONE_RPC_HOST=drone.wsh-study.com \
-  --env=DRONE_RPC_SECRET=1160fe98c5fcf55a3ddcdba21bae59a8 \ 
-  --env=DRONE_RUNNER_CAPACITY=2 \   
-  --env=DRONE_RUNNER_NAME=drone-runner \   
-  --publish=3000:3000 \
+docker run -itd \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -e DRONE_RPC_PROTO=http \
+  -e DRONE_RPC_HOST=drone.wsh-study.com \
+  -e DRONE_RPC_SECRET=1160fe98c5fcf55a3ddcdba21bae59a8 \
+  -e DRONE_RUNNER_CAPACITY=2 \
+  -e DRONE_RUNNER_NAME=drone-runner \
+  -p 3000:3000 \
   --restart=always \
+  --detach=true \
   --name=runner \
   drone/drone-runner-docker:1
 ```

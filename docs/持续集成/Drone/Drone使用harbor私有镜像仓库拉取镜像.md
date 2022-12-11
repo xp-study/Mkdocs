@@ -44,7 +44,7 @@ image_pull_secrets:
 ```js
 {
     "auths": {
-        "https//harbor.wsh-study.com": {
+        "https://harbor.wsh-study.com": {
             "auth": "YWRtaW46SGFyYm9yMTIzNDU="
         }
     }

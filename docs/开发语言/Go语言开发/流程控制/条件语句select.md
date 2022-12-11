@@ -35,7 +35,7 @@ select {
     如果没有default字句，select将阻塞，直到某个通信可以运行；Go不会重新对channel或值进行求值。
 ```
 
-#### 实例：
+实例：
 
 ```go
 package main

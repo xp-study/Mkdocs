@@ -64,7 +64,7 @@ func main() {
     3 100
 ```
 
-#### 实例：
+**实例：**
 
 ```go
 package main
@@ -149,7 +149,7 @@ for [condition |  ( init; condition; increment ) | Range]
 }
 ```
 
-#### 实例：
+**实例：**
 
 以下实例使用循环嵌套来输出 2 到 100 间的素数：
 

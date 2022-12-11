@@ -146,6 +146,7 @@ nav:
             - 提供动态分配卷: Kubernetes开发技术/Kubernetes部署/Kubernetes中部署NFSProvisioner为NFS提供动态分配卷.md
             - tab指令: Kubernetes开发技术/Kubernetes部署/解决k8s命令tab不管用.md
             - pod通信: Kubernetes开发技术/Kubernetes部署/k8s集群外的主机访问pod的解决方案.md
+            - Harbor忘记密码重置: Kubernetes开发技术\Kubernetes部署\Harbor忘记密码重置.md
         - KongAPI网关:
             - K8s方式安装部署: Kubernetes开发技术/KongAPI网关/K8s方式安装部署.md
             - Konga可视化工具部署: Kubernetes开发技术/KongAPI网关/Konga可视化工具部署.md

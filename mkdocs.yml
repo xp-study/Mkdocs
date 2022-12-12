@@ -76,6 +76,7 @@ nav:
             - 常用标准库:
                 - fmt: 开发语言/Go语言开发/常用标准库/fmt.md
                 - Time: 开发语言/Go语言开发/常用标准库/Time.md
+                - Flag: 开发语言/Go语言开发/常用标准库/Flag.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

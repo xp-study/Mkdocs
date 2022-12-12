@@ -120,6 +120,9 @@ nav:
                     - 基本操作测试: 开发语言/Go语言开发/数据操作/Go操作Zookeeper/基本操作测试.md
                     - 简单的分布式server: 开发语言/Go语言开发/数据操作/Go操作Zookeeper/简单的分布式server.md
                     - Zookeeper命令行使用: 开发语言/Go语言开发/数据操作/Go操作Zookeeper/Zookeeper命令行使用.md
+                - Go操作Kafka:
+                    - Kafka介绍: 开发语言/Go语言开发/数据操作/Go操作kafka/Kafka介绍.md
+                    - Kafka的安装: 开发语言/Go语言开发/数据操作/Go操作kafka/Kafka的安装.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

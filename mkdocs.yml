@@ -102,6 +102,7 @@ nav:
                     - Insert操作: 开发语言/Go语言开发/数据操作/Go操作Mysql/Insert操作.md
                     - Select操作: 开发语言/Go语言开发/数据操作/Go操作Mysql/Select操作.md
                     - Update操作: 开发语言/Go语言开发/数据操作/Go操作Mysql/Update操作.md
+                    - Delete操作: 开发语言/Go语言开发/数据操作/Go操作Mysql/Delete操作.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

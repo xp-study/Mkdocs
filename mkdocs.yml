@@ -157,6 +157,7 @@ nav:
                     - Goroutine池: 开发语言/Go语言开发/Go语言进阶/并发编程/Goroutine池.md
                     - 定时器: 开发语言/Go语言开发/Go语言进阶/并发编程/定时器.md
                     - select: 开发语言/Go语言开发/Go语言进阶/并发编程/select.md
+                    - 并发安全和锁: 开发语言/Go语言开发/Go语言进阶/并发编程/并发安全和锁.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

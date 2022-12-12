@@ -94,6 +94,8 @@ nav:
                     - HTTP编程: 开发语言/Go语言开发/网络编程/HTTP编程/HTTP编程.md
                 - Websocket编程:
                     - Websocket编程: 开发语言/Go语言开发/网络编程/Websocket编程/Websocket编程.md
+                - MQTT编程: 
+                    - MQTT编程: 开发语言/Go语言开发/网络编程/MQTT编程/MQTT编程.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

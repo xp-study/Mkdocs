@@ -118,6 +118,7 @@ nav:
                     - 操作ETCD: 开发语言/Go语言开发/数据操作/Go操作ETCD/操作ETCD.md
                 - Go操作Zookeeper:
                     - 基本操作测试: 开发语言/Go语言开发/数据操作/Go操作Zookeeper/基本操作测试.md
+                    - 简单的分布式server: 开发语言/Go语言开发/数据操作/Go操作Zookeeper/简单的分布式server.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

@@ -115,6 +115,7 @@ nav:
                     - Redis连接池: 开发语言/Go语言开发/数据操作/Go操作Redis/Redis连接池.md
                 - Go操作ETCD: 
                     - ETCD介绍: 开发语言/Go语言开发/数据操作/Go操作ETCD/ETCD介绍.md
+                    - 操作ETCD: 开发语言/Go语言开发/数据操作/Go操作ETCD/操作ETCD.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

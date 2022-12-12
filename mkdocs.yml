@@ -136,6 +136,7 @@ nav:
                         - 连接数据库: 开发语言/Go语言开发/数据操作/Gorm/入门指南/连接数据库.md
                     - CRUD接口:
                         - 创建: 开发语言/Go语言开发/数据操作/Gorm/CRUD接口/创建.md
+                        - 查询: 开发语言/Go语言开发/数据操作/Gorm/CRUD接口/查询.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

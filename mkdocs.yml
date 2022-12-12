@@ -126,6 +126,8 @@ nav:
                     - 操作Kafka: 开发语言/Go语言开发/数据操作/Go操作kafka/操作Kafka.md
                 - Go操作Apollo:
                     - Go操作Apollo: 开发语言/Go语言开发/数据操作/Go操作Apollo/Go操作Apollo.md
+                - Go操作memcached:
+                    - Go操作memcached: 开发语言/Go语言开发/数据操作/Go操作memcached/Go操作memcached.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

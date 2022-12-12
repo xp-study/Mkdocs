@@ -112,6 +112,7 @@ nav:
                     - 设置过期时间: 开发语言/Go语言开发/数据操作/Go操作Redis/设置过期时间.md
                     - List队列操作: 开发语言/Go语言开发/数据操作/Go操作Redis/List队列操作.md
                     - Hash表: 开发语言/Go语言开发/数据操作/Go操作Redis/Hash表.md
+                    - Redis连接池: 开发语言/Go语言开发/数据操作/Go操作Redis/Redis连接池.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

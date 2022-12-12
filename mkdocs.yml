@@ -139,8 +139,8 @@ nav:
                         - 查询: 开发语言/Go语言开发/数据操作/Gorm/CRUD接口/查询.md
                         - 更新: 开发语言/Go语言开发/数据操作/Gorm/CRUD接口/更新.md
                         - 删除: 开发语言/Go语言开发/数据操作/Gorm/CRUD接口/删除.md
-                    - 关联:
-                        - BelongsTo: 开发语言/Go语言开发/数据操作/Gorm/关联/BelongsTo.md
+                    - 教程:
+                        - 链式操作: 开发语言/Go语言开发/数据操作/Gorm/教程/链式操作.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

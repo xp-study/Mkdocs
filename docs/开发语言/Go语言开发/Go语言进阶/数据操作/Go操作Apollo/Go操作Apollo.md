@@ -24,13 +24,9 @@ docker-compose up
 
 ![img](./assets/1.webp)
 
-image.png
-
 输入用户名apollo，密码admin后登录管理后台。
 
 ![img](./assets/2.webp)
-
-image.png
 
 Apollo支持4个维度管理Key-Value格式的配置：
 
@@ -96,8 +92,6 @@ func main() {
 根据以下应用的key获取value值
 
 ![img](./assets/3.webp)
-
-image.png
 
 示例代码：
 

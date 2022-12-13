@@ -61,6 +61,6 @@ etcd 实现的这些功能，ZooKeeper都能实现。那么为什么要用 etcd 
 
 etcd 作为一个高可用键值存储系统，天生就是为集群化而设计的。由于 Raft 算法在做决策时需要多数节点的投票，所以 etcd 一般部署集群推荐奇数个节点，推荐的数量为 3、5 或者 7 个节点构成一个集群。
 
-### 1.1.7. 搭建一个ETCD集群示例：
+### 1.1.7. 搭建一个ETCD集群示例
 
-参考[部署一套完整的Kubernetes高可用集群](Kubernetes开发技术/Kubernetes部署/部署一套完整的Kubernetes高可用集群.md)
+参考 [部署一套完整的Kubernetes高可用集群](https://docs.wsh-study.com/Kubernetes%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/Kubernetes%E9%83%A8%E7%BD%B2/%E9%83%A8%E7%BD%B2%E4%B8%80%E5%A5%97%E5%AE%8C%E6%95%B4%E7%9A%84Kubernetes%E9%AB%98%E5%8F%AF%E7%94%A8%E9%9B%86%E7%BE%A4/) 第二节

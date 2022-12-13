@@ -244,7 +244,7 @@ import (
 )
 
 func wr() {
-    // 参数2：打开模式，所有模式d都在上面
+    // 参数2：打开模式
     // 参数3是权限控制
     // w写 r读 x执行   w  2   r  4   x  1
     file, err := os.OpenFile("./xxx.txt", os.O_CREATE|os.O_WRONLY, 0666)

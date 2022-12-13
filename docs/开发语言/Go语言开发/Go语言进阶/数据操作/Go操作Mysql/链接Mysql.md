@@ -1,4 +1,4 @@
-# 1. Mysql使用
+# 1. 链接Mysql
 
 新建test数据库，person、place 表
 
@@ -38,7 +38,7 @@ CREATE TABLE place (
     3 rows in set (0.01 sec)
 ```
 
-### 1.1.1. mysql使用
+### 1.1.1. 链接Mysql
 
 使用第三方开源的mysql库: github.com/go-sql-driver/mysql （mysql驱动） github.com/jmoiron/sqlx （基于mysql驱动的封装）
 

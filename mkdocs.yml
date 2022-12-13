@@ -99,7 +99,7 @@ nav:
                         - MQTT编程: 开发语言/Go语言开发/Go语言进阶/网络编程/MQTT编程/MQTT编程.md
                 - 数据操作:
                     - Go操作Mysql:
-                        - Mysql使用: 开发语言/Go语言开发/Go语言进阶/数据操作/Go操作Mysql/Mysql使用.md
+                        - 链接Mysql: 开发语言/Go语言开发/Go语言进阶/数据操作/Go操作Mysql/链接Mysql.md
                         - Insert操作: 开发语言/Go语言开发/Go语言进阶/数据操作/Go操作Mysql/Insert操作.md
                         - Select操作: 开发语言/Go语言开发/Go语言进阶/数据操作/Go操作Mysql/Select操作.md
                         - Update操作: 开发语言/Go语言开发/Go语言进阶/数据操作/Go操作Mysql/Update操作.md

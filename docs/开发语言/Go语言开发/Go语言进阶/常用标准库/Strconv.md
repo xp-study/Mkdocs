@@ -2,7 +2,7 @@
 
 ## 1.1. strconv包
 
-strconv包实现了基本数据类型与其字符串表示的转换，主要有以下常用函数： Atoi()、Itia()、parse系列、format系列、append系列。
+strconv包实现了基本数据类型与其字符串表示的转换，主要有以下常用函数： Atoi()、Itoa()、parse系列、format系列、append系列。
 
 更多函数请查看[官方文档](https://golang.org/pkg/strconv/)。
 

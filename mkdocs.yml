@@ -82,7 +82,6 @@ nav:
                     - Log: 开发语言/Go语言开发/Go语言进阶/常用标准库/Log.md
                     - IO操作: 开发语言/Go语言开发/Go语言进阶/常用标准库/IO操作.md
                     - Strconv: 开发语言/Go语言开发/Go语言进阶/常用标准库/Strconv.md
-                    - Template: 开发语言/Go语言开发/Go语言进阶/常用标准库/Template.md
                     - Http: 开发语言/Go语言开发/Go语言进阶/常用标准库/Http.md
                     - Context: 开发语言/Go语言开发/Go语言进阶/常用标准库/Context.md
                     - 数据格式: 开发语言/Go语言开发/Go语言进阶/常用标准库/数据格式.md

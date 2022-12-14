@@ -75,6 +75,8 @@ nav:
                         - 匿名字段: 开发语言/Go语言开发/Go语言基础/面向对象/匿名字段.md
                         - 接口: 开发语言/Go语言开发/Go语言基础/面向对象/接口.md
             - Go语言进阶:
+                - 依赖管理:
+                    - Golang项目依赖Gomodules: 开发语言/Go语言开发/Go语言进阶/依赖管理/Golang项目依赖Gomodules.md
                 - 常用标准库:
                     - fmt: 开发语言/Go语言开发/Go语言进阶/常用标准库/fmt.md
                     - Time: 开发语言/Go语言开发/Go语言进阶/常用标准库/Time.md

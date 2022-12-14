@@ -149,6 +149,11 @@ nav:
                             - 原生SQL和SQL生成器: 开发语言/Go语言开发/Go语言进阶/数据操作/Gorm/教程/原生SQL和SQL生成器.md
                             - 通用数据库接口: 开发语言/Go语言开发/Go语言进阶/数据操作/Gorm/教程/通用数据库接口.md
                             - Gorm用法介绍: 开发语言/Go语言开发/Go语言进阶/数据操作/Gorm/教程/Gorm用法介绍.md
+                - Go语言高性能编程:
+                    - 性能分析:
+                        - benchmark基准测试: 开发语言/Go语言开发/Go语言高性能编程/性能分析/benchmark基准测试.md
+                        - pprof性能分析: 开发语言/Go语言开发/Go语言高性能编程/性能分析/pprof性能分析.md
+                        - pyroscope性能分析: 开发语言/Go语言开发/Go语言高性能编程/性能分析/pyroscope性能分析.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

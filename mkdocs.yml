@@ -166,8 +166,7 @@ nav:
                             - Gorm用法介绍: 开发语言/Go语言开发/Go语言进阶/数据操作/Gorm/教程/Gorm用法介绍.md
                 - 常用框架:
                     - Gin框架:
-                        - 简介:
-                            - 简介: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/简介/简介.md
+                        - 快速入门: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/GoGin框架入门教程.md
                         - Gin路由:
                             - 基本路由: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/基本路由.md
                             - Restful风格的API: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/Restful风格的API.md

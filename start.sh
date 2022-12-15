@@ -22,4 +22,4 @@ fi
 
 docker build . -t $containerName
 
-docker run -p 10000:10000 $containerName /bin/sh  >/dev/null 2>&1 &
+docker run --name=$containerName -p 10000:10000 $containerName /bin/sh  >/dev/null 2>&1 &

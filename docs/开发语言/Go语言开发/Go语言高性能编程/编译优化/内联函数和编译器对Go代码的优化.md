@@ -88,7 +88,7 @@ $ go build -gcflags --help
 
 让编译器告诉我们它在编译 Go 代码对代码都做了哪些优化。
 
-接下用 -gcflags -m 构建一下我们的[小程序](https://cloud.tencent.com/product/tcb?from=10680)
+接下用 -gcflags -m 构建一下我们的小程序
 
 ```javascript
 $ go build -gcflags -m scratch.go
@@ -101,19 +101,13 @@ $ go build -gcflags -m scratch.go
 ./scratch_16.go:7:13: io.Writer(os.Stdout) escapes to heap
 ```
 
-复制
-
-通过终端的输出可以了解到，编译器判断 `add`函数可以进行内联，也对 `add` 函数进行了内联，除此之外还对`fmt.Println` 进行了内联优化。还有一个 **io.Writer(os.Stdout) escapes to heap** 的输出代表的是 io 对象逃逸到了堆上，堆逃逸是另外一种优化，在先前 Go内存管理系列的文章 -- [**Go内存管理之代码的逃逸分析**](https://mp.weixin.qq.com/s?__biz=MzUzNTY5MzU2MA==&mid=2247485579&idx=1&sn=f481cff4ffccacc186a020e45e884924&chksm=fa80d91ccdf7500ab984ecde7056aa29a2986c423557736c32bd251f2cb5d1ce1e54909753cc&scene=21&cur_album_id=1505074355683278852#wechat_redirect) 有详细说过。
+通过终端的输出可以了解到，编译器判断 `add`函数可以进行内联，也对 `add` 函数进行了内联，除此之外还对`fmt.Println` 进行了内联优化。还有一个 **io.Writer(os.Stdout) escapes to heap** 的输出代表的是 io 对象逃逸到了堆上，堆逃逸是另外一种优化。
 
 ### **哪些函数不会被内联**
 
 那么 Go 的编译器是不是会对所有的体量小，执行快的函数都会进行内联优化呢？我查查了资料发现 Go 在决策是否要对函数进行内联时有一个标准：
 
-**函数体内包含：闭包调用，select ，for ，defer，go 关键字的的函数不会进行内联。并且除了这些，还有其它的限制。当解析AST时，Go申请了80个节点作为内联的预算。每个节点都会消耗一个预算**。比如，`a = a + 1`这行代码包含了5个节点：AS, NAME, ADD, NAME, LITERAL。以下是对应的SSA 输出：
-
-![img](./assets/内联函数和编译器对Go代码的优化/1.png)
-
-**当一个函数的开销超过了这个预算，就无法内联**。
+**函数体内包含：闭包调用，select ，for ，defer，go 关键字的的函数不会进行内联。并且除了这些，还有其它的限制。当解析AST时，Go申请了80个节点作为内联的预算。每个节点都会消耗一个预算**。
 
 ## **总结**
 

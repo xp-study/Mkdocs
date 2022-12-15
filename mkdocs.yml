@@ -196,6 +196,15 @@ nav:
                             - Cookie的使用: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/会话控制/Cookie的使用.md
                             - Cookie的缺点: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/会话控制/Cookie的缺点.md
                             - Sessions: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/会话控制/Sessions.md
+                        - 参数验证:
+                            - 结构体验证: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/参数验证/结构体验证.md
+                            - 自定义验证: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/参数验证/自定义验证.md
+                            - 多语言翻译验证: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/参数验证/多语言翻译验证.md
+                        - Gin源码阅读:
+                            - net/http的大概流程: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin源码阅读/nethttp的大概流程.md
+                            - 揭开gin的神秘面纱: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin源码阅读/揭开gin的神秘面纱.md
+                            - gin牛逼的context: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin源码阅读/gin牛逼的context.md
+                            - gin的路由算法: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin源码阅读/gin的路由算法.md
             - Go语言高性能编程:
                 - 性能分析:
                     - benchmark基准测试: 开发语言/Go语言开发/Go语言高性能编程/性能分析/benchmark基准测试.md

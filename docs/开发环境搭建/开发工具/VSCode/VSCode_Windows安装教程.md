@@ -6,7 +6,7 @@
 
 下载地址：[Download Visual Studio Code](https://code.visualstudio.com/download)
 
-![1.png](./assets/VSCode_Windows安装教程（超详细）/1.png)
+![1.png](./assets/VSCode_Windows安装教程/1.png)
 
 选择相应的版本下载。
 
@@ -16,15 +16,15 @@
 
 ## 一、同意协议（废话了我）
 
-![1.png](./assets/VSCode_Windows安装教程（超详细）/2.png)
+![1.png](./assets/VSCode_Windows安装教程/2.png)
 
 ## 二、选择合适的安装位置，下一步
 
-![2.png](./assets/VSCode_Windows安装教程（超详细）/3.png)
+![2.png](./assets/VSCode_Windows安装教程/3.png)
 
 ## 三、下一步
 
-![3.png](./assets/VSCode_Windows安装教程（超详细）/4.png)
+![3.png](./assets/VSCode_Windows安装教程/4.png)
 
 ## 四、这里注意下，进行相关的选择
 
@@ -34,26 +34,26 @@
 
 3、添加到PATH（重启后生效）：建议勾选，这样可以使用控制台打开VSCode 了。
 
-![4.png](./assets/VSCode_Windows安装教程（超详细）/5.png)
+![4.png](./assets/VSCode_Windows安装教程/5.png)
 
 ## 五、点击安装
 
-![5.png](./assets/VSCode_Windows安装教程（超详细）/6.png)
+![5.png](./assets/VSCode_Windows安装教程/6.png)
 
 ## 六、等待安装完成，很快
 
-![6.png](./assets/VSCode_Windows安装教程（超详细）/7.png)
+![6.png](./assets/VSCode_Windows安装教程/7.png)
 
 ## 配置中文界面
 
 上面安装完成后会出现下面的界面，我们搜索Chinese，点击install
 
-![7.png](./assets/VSCode_Windows安装教程（超详细）/8.png)
+![7.png](./assets/VSCode_Windows安装教程/8.png)
 
-## 然后Restart![8.png](./assets/VSCode_Windows安装教程（超详细）/9.png)
+## 然后Restart![8.png](./assets/VSCode_Windows安装教程/9.png)
 
 ## 重启后就ok了，中文界面
 
-![9.png](./assets/VSCode_Windows安装教程（超详细）/10.png)
+![9.png](./assets/VSCode_Windows安装教程/10.png)
 
 以上就是VSCode安装教程（超详细）的全部内容。

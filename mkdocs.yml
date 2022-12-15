@@ -2,7 +2,7 @@ site_name: 许鹏的学习文档
 nav:
     - 目录: index.md
     - 开发环境搭建:
-        - 操作系统环境搭建:   
+        - 操作系统:   
             - Ubuntu:
                 - Ubuntu修改DNS: 开发环境搭建/操作系统/Ubuntu/Ubuntu修改DNS.md  
                 - 定制ubuntu_iso镜像: 开发环境搭建/操作系统/Ubuntu/使用Cubic定制ubuntu_iso镜像.md  
@@ -13,6 +13,9 @@ nav:
                 - Windows系统下载网站: 开发环境搭建/操作系统/Windows/Windows系统下载网站(推荐).md
             - 再生龙:
                 - 再生龙备份还原操作系统: 开发环境搭建/操作系统/再生龙/再生龙备份还原操作系统.md    
+        - 虚拟机:
+            - VMware16安装Win11: 开发环境搭建/虚拟机/VMware16安装Win11.md
+            - VMware16安装Ubuntu20: 开发环境搭建/虚拟机/VMware16安装Ubuntu20.04.md
         - 开发工具:
             - VSCode:
                 - VSCode_Windows安装教程: 开发环境搭建/开发工具/VSCode/VSCode_Windows安装教程.md
@@ -20,9 +23,6 @@ nav:
             - Git:
                 - Git_Windows安装: 开发环境搭建/开发工具/Git/Git_Windows安装.md
                 - Git_Ubuntu安装: 开发环境搭建/开发工具/Git/Git_Ubuntu安装.md
-        - 虚拟机:
-            - VMware16安装Win11: 开发环境搭建/虚拟机/VMware16安装Win11.md
-            - VMware16安装Ubuntu20: 开发环境搭建/虚拟机/VMware16安装Ubuntu20.04.md
         - Node.js开发环境搭建: 开发环境搭建/Node.js开发环境搭建.md
         - Nginx环境搭建: 开发环境搭建/Nginx环境搭建.md
     - 计算机基础:

@@ -2,14 +2,20 @@ site_name: 许鹏的学习文档
 nav:
     - 目录: index.md
     - 开发环境搭建:
-        - 安装虚拟机版本Windows: 开发环境搭建/安装虚拟机版本Windows/安装虚拟机版本Windows.md
-        - 安装虚拟机版本Ubuntu: 开发环境搭建/安装虚拟机版本Ubuntu/安装虚拟机版本Ubuntu.md
-        - VSCode开发环境搭建:
-            - 安装配置: 开发环境搭建/VSCode开发环境搭建/安装配置.md
-            - 常用开发插件: 开发环境搭建/VSCode开发环境搭建/常用开发插件.md          
+        - 操作系统:   
+            - Ubuntu:
+                - Ubuntu修改DNS: 开发环境搭建/操作系统/Ubuntu/Ubuntu修改DNS.md  
+                - 定制ubuntu_iso镜像: 开发环境搭建/操作系统/Ubuntu/使用Cubic定制ubuntu_iso镜像.md  
+                - Ubuntu16.04导入根证书: 开发环境搭建/操作系统/Ubuntu/Ubuntu16.04导入根证书.md 
+                - 64位Ubuntu兼容32位程序: 开发环境搭建/操作系统/Ubuntu/Ubuntu16.04(64位)兼容32位程序.md 
+                - 桌面左侧任务栏到屏幕底部: 开发环境搭建/操作系统/Ubuntu/移动Ubuntu16.04桌面左侧任务栏到屏幕底部.md
+            - Windows:
+                - Windows系统下载网站: 开发环境搭建/操作系统/Windows/Windows系统下载网站(推荐).md
+                - 使用NSIS制作安装包: 开发环境搭建/操作系统/Windows/使用NSIS制作安装包.md
+            - 再生龙:
+                - 再生龙备份还原操作系统: 开发环境搭建/操作系统/再生龙/再生龙备份还原操作系统.md    
         - Node.js开发环境搭建: 开发环境搭建/Node.js开发环境搭建.md
         - Nginx环境搭建: 开发环境搭建/Nginx环境搭建.md
-        - Vue.js开发环境搭建: 开发环境搭建/Vue.js开发环境搭建.md
     - 计算机基础:
         - 计算机网络:
             - HTTP/HTTPS:
@@ -269,18 +275,6 @@ nav:
         - Gitlab定时备份: Gitlab私有仓库搭建/Gitlab定时备份.md
         - Gitlab配置邮件服务: Gitlab私有仓库搭建/Gitlab配置邮件服务.md
         - Gitlab配置HTTPS: Gitlab私有仓库搭建/Gitlab配置HTTPS.md
-    - 操作系统相关:     
-        - Ubuntu相关知识:
-            - Ubuntu修改DNS: 操作系统相关知识/Ubuntu/Ubuntu修改DNS.md  
-            - 定制ubuntu_iso镜像: 操作系统相关知识/Ubuntu/使用Cubic定制ubuntu_iso镜像.md  
-            - Ubuntu16.04导入根证书: 操作系统相关知识/Ubuntu/Ubuntu16.04导入根证书.md 
-            - 64位Ubuntu兼容32位程序: 操作系统相关知识/Ubuntu/Ubuntu16.04(64位)兼容32位程序.md 
-            - 桌面左侧任务栏到屏幕底部: 操作系统相关知识/Ubuntu/移动Ubuntu16.04桌面左侧任务栏到屏幕底部.md
-        - Windows相关知识:
-            - Windows系统下载网站: 操作系统相关知识/Windows/Windows系统下载网站(推荐).md
-            - 使用NSIS制作安装包: 操作系统相关知识/Windows/使用NSIS制作安装包.md
-        - 再生龙:
-            - 再生龙备份还原操作系统: 操作系统相关知识/再生龙/再生龙备份还原操作系统.md
 theme:
     name: 'material'
     favicon: assets/image/favicon.ico

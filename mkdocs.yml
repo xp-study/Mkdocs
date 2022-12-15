@@ -174,6 +174,10 @@ nav:
                             - API参数: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/API参数.md
                             - URL参数: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/URL参数.md
                             - 表单参数: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/表单参数.md
+                            - 上传单个文件: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/上传单个文件.md
+                            - 上传多个文件: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/上传多个文件.md
+                            - routesgroup: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/routesgroup.md
+                            - 路由拆分与注册: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/路由拆分与注册.md
             - Go语言高性能编程:
                 - 性能分析:
                     - benchmark基准测试: 开发语言/Go语言开发/Go语言高性能编程/性能分析/benchmark基准测试.md

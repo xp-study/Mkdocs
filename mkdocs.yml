@@ -170,6 +170,9 @@ nav:
                             - 简介: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/简介/简介.md
                         - Gin路由:
                             - 基本路由: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/基本路由.md
+                            - Restful风格的API: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/Restful风格的API.md
+                            - API参数: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/API参数.md
+                            - URL参数: 开发语言/Go语言开发/Go语言进阶/常用框架/Gin框架/Gin路由/URL参数.md
             - Go语言高性能编程:
                 - 性能分析:
                     - benchmark基准测试: 开发语言/Go语言开发/Go语言高性能编程/性能分析/benchmark基准测试.md

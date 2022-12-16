@@ -229,6 +229,8 @@ nav:
                         - 揭开gin的神秘面纱: 开发语言/Go语言开发/Go语言Web开发/Gin框架/Gin源码阅读/揭开gin的神秘面纱.md
                         - gin牛逼的context: 开发语言/Go语言开发/Go语言Web开发/Gin框架/Gin源码阅读/gin牛逼的context.md
                         - gin的路由算法: 开发语言/Go语言开发/Go语言Web开发/Gin框架/Gin源码阅读/gin的路由算法.md
+                - Fx框架:
+                    - Fx理论篇: 开发语言/Go语言开发/Go语言Web开发/Fx框架/Fx理论篇.md
         - Java语言开发:
             - 开发环境搭建:
                 - Linux下安装JDK: 开发语言/Java语言开发/开发环境搭建/Ubuntu20.04安装JDK(java环境).md

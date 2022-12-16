@@ -190,6 +190,10 @@ nav:
                     - GMP原理与调度: 开发语言/Go语言开发/Go语言高性能编程/运行时/GMP原理与调度.md
                     - Golang内存回收模式全分析: 开发语言/Go语言开发/Go语言高性能编程/运行时/Golang内存回收模式全分析.md           
             - Go语言Web开发:
+                - Beego框架:
+                    - 快速入门:
+                        - Beego快速入门教程: 开发语言/Go语言开发/Go语言Web开发/Beego框架/Beego快速入门教程.md
+                        - Beego参数配置: 开发语言/Go语言开发/Go语言Web开发/Beego框架/快速入门/Beego参数配置.md
                 - Gin框架:
                     - 快速入门: 开发语言/Go语言开发/Go语言Web开发/Gin框架/GoGin框架入门教程.md
                     - Gin路由:

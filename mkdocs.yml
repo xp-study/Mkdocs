@@ -199,6 +199,12 @@ nav:
                         - Beego控制器函数: 开发语言/Go语言开发/Go语言Web开发/Beego框架/控制器/Beego控制器函数.md
                         - Beego处理请求参数: 开发语言/Go语言开发/Go语言Web开发/Beego框架/控制器/Beego处理请求参数.md
                         - Beego处理响应数据: 开发语言/Go语言开发/Go语言Web开发/Beego框架/控制器/Beego处理响应数据.md
+                    - 模型: 
+                        - BeegoOrm数据库操作入门教程: 开发语言/Go语言开发/Go语言Web开发/Beego框架/模型/BeegoOrm数据库操作入门教程.md
+                        - BeegoOrm数据库连接设置: 开发语言/Go语言开发/Go语言Web开发/Beego框架/模型/BeegoOrm数据库连接设置.md
+                        - beegoOrm高级查询: 开发语言/Go语言开发/Go语言Web开发/Beego框架/模型/BeegoOrm高级查询.md
+                        - beegoOrm如何执行SQL查询: 开发语言/Go语言开发/Go语言Web开发/Beego框架/模型/BeegoOrm如何执行SQL查询.md
+                        - BeegoOrm数据库事务处理: 开发语言/Go语言开发/Go语言Web开发/Beego框架/模型/BeegoOrm数据库事务处理.md
                 - Gin框架:
                     - 快速入门: 开发语言/Go语言开发/Go语言Web开发/Gin框架/GoGin框架入门教程.md
                     - Gin路由:

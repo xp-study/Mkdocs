@@ -6,7 +6,7 @@
 
 ![img](./assets/HTTPSRSA握手解析/1.png)
 
-对于还不知道对称加密和非对称加密的同学，你先复习我以前的这篇文章[「硬核！30 张图解 HTTP 常见的面试题」， ](https://mp.weixin.qq.com/s/bUy220-ect00N4gnO0697A)本篇文章默认大家已经具备了这些知识。
+对于还不知道对称加密和非对称加密的同学，你先复习我以前的这篇文章[「硬核！30 张图解 HTTP 常见的面试题」](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP/HTTP%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/)本篇文章默认大家已经具备了这些知识。
 
 ------
 

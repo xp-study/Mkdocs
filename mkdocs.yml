@@ -159,6 +159,7 @@ nav:
                     - gRPC快速入门: 开发语言/Go语言开发/Go语言进阶/RPC编程/gRPC快速入门.md
                     - protobuf语法学习: 开发语言/Go语言开发/Go语言进阶/RPC编程/protobuf语法学习.md
                     - gRPC中的Token认证: 开发语言/Go语言开发/Go语言进阶/RPC编程/gRPC中的Token认证.md
+                    - gRPC中的证书认证: 开发语言/Go语言开发/Go语言进阶/RPC编程/gRPC中的证书认证.md
                 - 数据操作:
                     - Go操作Mysql:
                         - 链接Mysql: 开发语言/Go语言开发/Go语言进阶/数据操作/Go操作Mysql/链接Mysql.md

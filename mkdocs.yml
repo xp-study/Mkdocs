@@ -153,6 +153,9 @@ nav:
                         - Websocket编程: 开发语言/Go语言开发/Go语言进阶/网络编程/Websocket编程/Websocket编程.md
                     - MQTT编程: 
                         - MQTT编程: 开发语言/Go语言开发/Go语言进阶/网络编程/MQTT编程/MQTT编程.md
+                - RPC编程:
+                    - 初步了解RPC: 开发语言/Go语言开发/Go语言进阶/RPC编程/初步了解RPC.md
+                    - 快速入门使用: 开发语言/Go语言开发/Go语言进阶/RPC编程/快速入门使用.md
                 - 数据操作:
                     - Go操作Mysql:
                         - 链接Mysql: 开发语言/Go语言开发/Go语言进阶/数据操作/Go操作Mysql/链接Mysql.md

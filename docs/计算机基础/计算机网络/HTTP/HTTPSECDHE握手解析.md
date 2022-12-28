@@ -4,7 +4,7 @@ HTTPS 常用的密钥交换算法有两种，分别是 RSA 和 ECDHE 算法。
 
 其中，RSA 是比较传统的密钥交换算法，它不具备前向安全的性质，因此现在很少服务器使用的。而 ECDHE 算法具有前向安全，所以被广泛使用。
 
-我在上一篇已经介绍了 [RSA 握手的过程 ](https://mp.weixin.qq.com/s/U9SRLE7jZTB6lUZ6c8gTKg)，今天这一篇就「从理论再到实战抓包」介绍  **ECDHE 算法** 。
+我在上一篇已经介绍了 [RSA 握手的过程 ](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/HTTP/HTTPSRSA%E6%8F%A1%E6%89%8B%E8%A7%A3%E6%9E%90/)，今天这一篇就「从理论再到实战抓包」介绍  **ECDHE 算法** 。
 
 ![img](./assets/HTTPSECDHE握手解析/1.png)
 

@@ -46,6 +46,12 @@ nav:
                 - TCP Keepalive 和 HTTP Keep-Alive是一个东西吗: 计算机基础/计算机网络/TCP/TCPKeepalive和HTTPKeep-Alive是一个东西吗.md
                 - TCP协议有什么缺陷: 计算机基础/计算机网络/TCP/TCP协议有什么缺陷.md
                 - 如何基于UDP协议实现可靠传输: 计算机基础/计算机网络/TCP/如何基于UDP协议实现可靠传输.md
+                - TCP和UDP可以使用同一个端口吗: 计算机基础/计算机网络/TCP/TCP和UDP可以使用同一个端口吗.md
+                - 服务端没有listen客户端发起连接建立会发生什么: 计算机基础/计算机网络/TCP/服务端没有listen客户端发起连接建立会发生什么.md
+                - 没有accept能建立TCP连接吗: 计算机基础/计算机网络/TCP/没有accept能建立TCP连接吗.md
+                - 用了TCP协议数据一定不会丢吗: 计算机基础/计算机网络/TCP/用了TCP协议数据一定不会丢吗.md
+                - TCP四次挥手可以变成三次吗: 计算机基础/计算机网络/TCP/TCP四次挥手可以变成三次吗.md
+                - TCP序列号和确认号是如何变化的: 计算机基础/计算机网络/TCP/TCP序列号和确认号是如何变化的.md
             - HTTP:
                 - URI和URL区别和关联: 计算机基础/计算机网络/HTTP/URI和URL区别和关联.md
                 - HTTP常见面试题: 计算机基础/计算机网络/HTTP/HTTP常见面试题.md

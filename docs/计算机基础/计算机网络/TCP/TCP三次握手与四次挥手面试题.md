@@ -626,7 +626,7 @@ $ echo 2 > /proc/sys/net/ipv4/tcp_synack_retries
 
 从上面过程可知，服务端通常需要等待完成数据的发送和处理，所以服务端的 `ACK` 和 `FIN` 一般都会分开发送，因此是需要四次挥手。
 
-但是 **在特定情况下，四次挥手是可以变成三次挥手的** ，具体情况可以看这篇：[TCP 四次挥手，可以变成三次吗？](https://xiaolincoding.com/network/3_tcp/tcp_three_fin.html)
+但是 **在特定情况下，四次挥手是可以变成三次挥手的** ，具体情况可以看这篇：[TCP 四次挥手，可以变成三次吗？](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP/TCP%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E5%8F%AF%E4%BB%A5%E5%8F%98%E6%88%90%E4%B8%89%E6%AC%A1%E5%90%97/)
 
 ### 第一次挥手丢失了，会发生什么？
 

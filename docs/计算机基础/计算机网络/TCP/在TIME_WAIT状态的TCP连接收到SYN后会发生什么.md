@@ -236,7 +236,7 @@ TIME_WAIT 状态之所以要持续 2MSL 时间，主要有两个目的：
 - 防止历史连接中的数据，被后面相同四元组的连接错误的接收；
 - 保证「被动关闭连接」的一方，能被正确的关闭；
 
-详细的为什么要设计 TIME_WAIT 状态，我在这篇有详细说明：[如果 TIME_WAIT 状态持续时间过短或者没有，会有什么问题？](https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247502380&idx=1&sn=7b82818a5fb6f1127d17f0ded550c4bd&scene=21#wechat_redirect)
+详细的为什么要设计 TIME_WAIT 状态，我在这篇有详细说明：[如果 TIME_WAIT 状态持续时间过短或者没有，会有什么问题？](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP/%E5%A6%82%E6%9E%9CTIME_WAIT%E7%8A%B6%E6%80%81%E6%8C%81%E7%BB%AD%E6%97%B6%E9%97%B4%E8%BF%87%E7%9F%AD%E6%88%96%E8%80%85%E6%B2%A1%E6%9C%89%E4%BC%9A%E6%9C%89%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98/)
 
 虽然 TIME_WAIT 状态持续的时间是有一点长，显得很不友好，但是它被设计来就是用来避免发生乱七八糟的事情。
 

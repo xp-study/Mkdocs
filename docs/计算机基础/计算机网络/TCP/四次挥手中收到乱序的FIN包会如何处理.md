@@ -66,5 +66,3 @@
 ![img](./assets/四次挥手中收到乱序的FIN包会如何处理/9.png)
 
 可以看到，如果当前的 TCP 状态为 TCP_FIN_WAIT2，就会发送第四次挥手 ack，然后调用 tcp_time_wait 函数，这个函数里会将 TCP 状态变更为 TIME_WAIT，并启动 TIME_WAIT 的定时器。
-
-## 怎么看 TCP 源码？

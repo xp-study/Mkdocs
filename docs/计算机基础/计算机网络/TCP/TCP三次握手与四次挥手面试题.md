@@ -805,7 +805,7 @@ TIME_WAIT 等待 2 倍的 MSL，比较合理的解释是： 网络中可能存�
 
 客户端和服务端 TIME_WAIT 过多，造成的影响是不同的。
 
- **如果客户端（主动发起关闭连接方）的 TIME_WAIT 状态过多** ，占满了所有端口资源，那么就无法对「目的 IP+ 目的 PORT」都一样的服务端发起连接了，但是被使用的端口，还是可以继续对另外一个服务端发起连接的。具体可以看我这篇文章：[客户端的端口可以重复使用吗？](https://xiaolincoding.com/network/3_tcp/port.html#客户端的端口可以重复使用吗)
+ **如果客户端（主动发起关闭连接方）的 TIME_WAIT 状态过多** ，占满了所有端口资源，那么就无法对「目的 IP+ 目的 PORT」都一样的服务端发起连接了，但是被使用的端口，还是可以继续对另外一个服务端发起连接的。具体可以看我这篇文章：[客户端的端口可以重复使用吗？](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP/TCP%E5%92%8CUDP%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E7%AB%AF%E5%8F%A3%E5%90%97/)
 
 因此，客户端（发起连接方）都是和「目的 IP+ 目的 PORT 」都一样的服务端建立连接的话，当客户端的 TIME_WAIT 状态连接过多的话，就会受端口资源限制，如果占满了所有端口资源，那么就无法再跟「目的 IP+ 目的 PORT」都一样的服务端建立连接了。
 
@@ -1037,11 +1037,9 @@ TCP 的连接信息是由内核维护的，所以当服务端的进程崩溃后�
 
 我自己做了个实验，使用 kill -9 来模拟进程崩溃的情况，发现 **在 kill 掉进程后，服务端会发送 FIN 报文，与客户端进行四次挥手** 。
 
-TIP
+关于进程崩溃和主机宕机的区别，可以参考这篇：[TCP 连接，一端断电和进程崩溃有什么区别？](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP/TCP%E8%BF%9E%E6%8E%A5%E4%B8%80%E7%AB%AF%E6%96%AD%E7%94%B5%E5%92%8C%E8%BF%9B%E7%A8%8B%E5%B4%A9%E6%BA%83%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/)
 
-关于进程崩溃和主机宕机的区别，可以参考这篇：[TCP 连接，一端断电和进程崩溃有什么区别？](https://xiaolincoding.com/network/3_tcp/tcp_down_and_crash.html)
-
-还有一个类似的问题：「拔掉网线后， 原本的 TCP 连接还存在吗？」，具体可以看这篇：[拔掉网线后， 原本的 TCP 连接还存在吗？](https://xiaolincoding.com/network/3_tcp/tcp_unplug_the_network_cable.html)
+还有一个类似的问题：「拔掉网线后， 原本的 TCP 连接还存在吗？」，具体可以看这篇：[拔掉网线后， 原本的 TCP 连接还存在吗？](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP/%E6%8B%94%E6%8E%89%E7%BD%91%E7%BA%BF%E5%90%8E%E5%8E%9F%E6%9C%AC%E7%9A%84TCP%E8%BF%9E%E6%8E%A5%E8%BF%98%E5%AD%98%E5%9C%A8%E5%90%97/)
 
 ------
 
@@ -1088,7 +1086,7 @@ int listen (int socketfd, int backlog)
 
  **但是上限值是内核参数 somaxconn 的大小，也就说 accpet 队列长度 = min(backlog, somaxconn)。**  
 
-想详细了解 TCP 半连接队列和全连接队列，可以看这篇：[TCP 半连接队列和全连接队列满了会发生什么？又该如何应对？](https://xiaolincoding.com/network/3_tcp/tcp_queue.html)
+想详细了解 TCP 半连接队列和全连接队列，可以看这篇：[TCP 半连接队列和全连接队列满了会发生什么？又该如何应对？](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP/TCP%E5%8D%8A%E8%BF%9E%E6%8E%A5%E9%98%9F%E5%88%97%E5%92%8C%E5%85%A8%E8%BF%9E%E6%8E%A5%E9%98%9F%E5%88%97/)
 
 ### accept 发生在三次握手的哪一步？
 
@@ -1097,9 +1095,9 @@ int listen (int socketfd, int backlog)
 ![socket 三次握手](./assets/TCP三次握手与四次挥手面试题/49.png)
 
 - 客户端的协议栈向服务端端发送了 SYN 包，并告诉服务端端当前发送序列号 client_isn，客户端进入 SYN_SENT 状态；
-- 服务端端的协议栈收到这个包之后，和客户端进行 ACK 应答，应答的值为 client_isn+1，表示对 SYN 包 client_isn 的确认，同时服务端也发送一个 SYN 包，告诉客户端当前我的发送序列号为 server_isn，服务端端进入 SYN_RCVD 状态；
-- 客户端协议栈收到 ACK 之后，使得应用程序从 `connect` 调用返回，表示客户端到服务端端的单向连接建立成功，客户端的状态为 ESTABLISHED，同时客户端协议栈也会对服务端端的 SYN 包进行应答，应答数据为 server_isn+1；
-- ACK 应答包到达服务端端后，服务端端的 TCP 连接进入 ESTABLISHED 状态，同时服务端端协议栈使得 `accept` 阻塞调用返回，这个时候服务端端到客户端的单向连接也建立成功。至此，客户端与服务端两个方向的连接都建立成功。
+- 服务端的协议栈收到这个包之后，和客户端进行 ACK 应答，应答的值为 client_isn+1，表示对 SYN 包 client_isn 的确认，同时服务端也发送一个 SYN 包，告诉客户端当前我的发送序列号为 server_isn，服务端端进入 SYN_RCVD 状态；
+- 客户端协议栈收到 ACK 之后，使得应用程序从 `connect` 调用返回，表示客户端到服务端的单向连接建立成功，客户端的状态为 ESTABLISHED，同时客户端协议栈也会对服务端的 SYN 包进行应答，应答数据为 server_isn+1；
+- ACK 应答包到达服务端后，服务端的 TCP 连接进入 ESTABLISHED 状态，同时服务端协议栈使得 `accept` 阻塞调用返回，这个时候服务端到客户端的单向连接也建立成功。至此，客户端与服务端两个方向的连接都建立成功。
 
 从上面的描述过程，我们可以得知 **客户端 connect 成功返回是在第二次握手，服务端 accept 成功返回是在三次握手成功之后。**  
 
@@ -1124,7 +1122,7 @@ accpet 系统调用并不参与 TCP 三次握手过程，它只是负责从 TCP 
 
 ![半连接队列与全连接队列](./assets/TCP三次握手与四次挥手面试题/51.jpg)
 
-更想了解这个问题，可以参考这篇文章：[没有 accept，能建立 TCP 连接吗？](https://xiaolincoding.com/network/3_tcp/tcp_no_accpet.html)
+更想了解这个问题，可以参考这篇文章：[没有 accept，能建立 TCP 连接吗？](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP/%E6%B2%A1%E6%9C%89accept%E8%83%BD%E5%BB%BA%E7%AB%8BTCP%E8%BF%9E%E6%8E%A5%E5%90%97/)
 
 ### 没有 listen，能建立 TCP 连接吗？
 
@@ -1132,4 +1130,4 @@ accpet 系统调用并不参与 TCP 三次握手过程，它只是负责从 TCP 
 
 客户端是可以自己连自己的形成连接（ **TCP自连接** ），也可以两个客户端同时向对方发出请求建立连接（ **TCP同时打开** ），这两个情况都有个共同点，就是 **没有服务端参与，也就是没有 listen，就能 TCP 建立连接。**  
 
-更想了解这个问题，可以参考这篇文章：[服务端没有 listen，客户端发起连接建立，会发生什么？](https://xiaolincoding.com/network/3_tcp/tcp_no_listen.html)
+更想了解这个问题，可以参考这篇文章：[服务端没有 listen，客户端发起连接建立，会发生什么？](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%B2%A1%E6%9C%89listen%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%8F%91%E8%B5%B7%E8%BF%9E%E6%8E%A5%E5%BB%BA%E7%AB%8B%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88/)

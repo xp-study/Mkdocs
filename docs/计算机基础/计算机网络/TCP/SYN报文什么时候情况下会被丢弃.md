@@ -25,7 +25,7 @@ TCP 四次挥手过程中，主动断开连接方会有一个 TIME_WAIT 的状�
  net.ipv4.ip_local_port_range
 ```
 
- **如果客户端（发起连接方）的 TIME_WAIT 状态过多** ，占满了所有端口资源，那么就无法对「目的 IP+ 目的 PORT」都一样的服务器发起连接了，但是被使用的端口，还是可以继续对另外一个服务器发起连接的。具体可以看我这篇文章：[客户端的端口可以重复使用吗？](https://xiaolincoding.com/network/3_tcp/port.html#客户端的端口可以重复使用吗)
+ **如果客户端（发起连接方）的 TIME_WAIT 状态过多** ，占满了所有端口资源，那么就无法对「目的 IP+ 目的 PORT」都一样的服务器发起连接了，但是被使用的端口，还是可以继续对另外一个服务器发起连接的。具体可以看我这篇文章：[客户端的端口可以重复使用吗？](https://xiaolincoding.com/network/3_tcp/port.html#%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%9A%84%E7%AB%AF%E5%8F%A3%E5%8F%AF%E4%BB%A5%E9%87%8D%E5%A4%8D%E4%BD%BF%E7%94%A8%E5%90%97)
 
 因此，客户端（发起连接方）都是和「目的 IP+ 目的 PORT 」都一样的服务器建立连接的话，当客户端的 TIME_WAIT 状态连接过多的话，就会受端口资源限制，如果占满了所有端口资源，那么就无法再跟「目的 IP+ 目的 PORT」都一样的服务器建立连接了。
 
@@ -92,7 +92,7 @@ tcp_tw_recycle 在 Linux 4.12 版本后，直接取消了这一参数。
 
 ### 半连接队列满了
 
-当服务器造成syn攻击，就有可能导致  **TCP 半连接队列满了，这时后面来的 syn 包都会被丢弃** 。
+当服务器遭到syn攻击，就有可能导致  **TCP 半连接队列满了，这时后面来的 syn 包都会被丢弃** 。
 
 但是， **如果开启了syncookies 功能，即使半连接队列满了，也不会丢弃syn 包** 。
 
@@ -164,4 +164,4 @@ syncookies 参数主要有以下三个值：
 - 调大 accpet 队列的最大长度，调大的方式是通过 **调大 backlog 以及 somaxconn 参数。**  
 - 检查系统或者代码为什么调用 accept() 不及时；
 
-关于 SYN 队列和 accpet 队列，我之前写过一篇很详细的文章：[TCP 半连接队列和全连接队列满了会发生什么？又该如何应对？](https://mp.weixin.qq.com/s/2qN0ulyBtO2I67NB_RnJbg)
+关于 SYN 队列和 accpet 队列，我之前写过一篇很详细的文章：[TCP 半连接队列和全连接队列](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP/TCP%E5%8D%8A%E8%BF%9E%E6%8E%A5%E9%98%9F%E5%88%97%E5%92%8C%E5%85%A8%E8%BF%9E%E6%8E%A5%E9%98%9F%E5%88%97/)

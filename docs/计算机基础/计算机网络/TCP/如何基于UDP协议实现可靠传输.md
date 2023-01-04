@@ -8,7 +8,7 @@
 
 所以，我们要先弄清楚 TCP 协议有哪些痛点？而这些痛点是否可以在基于 UDP 协议实现的可靠传输协议中得到改进？
 
-在之前这篇文章：[TCP 就没什么缺陷吗？ ](https://mp.weixin.qq.com/s/9kHoRk6QIYOFUR_PCmHY6g)，我已经说了 TCP 协议四个方面的缺陷：
+在之前这篇文章：[TCP 就没什么缺陷吗？ ](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP/TCP%E5%8D%8F%E8%AE%AE%E6%9C%89%E4%BB%80%E4%B9%88%E7%BC%BA%E9%99%B7/)，我已经说了 TCP 协议四个方面的缺陷：
 
 - 升级 TCP 的工作很困难；
 - TCP 建立连接的延迟；

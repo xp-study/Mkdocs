@@ -38,7 +38,7 @@ TCP 四次挥手过程，如下图：
 
 这里一点需要注意是： **主动关闭连接的，才有 TIME_WAIT 状态。**  
 
-可以看到，TIME_WAIT 是「主动关闭方」断开连接时的最后一个状态，该状态会持续  ***2MSL(Maximum Segment Lifetime)**  时长，之后进入CLOSED 状态。
+可以看到，TIME_WAIT 是「主动关闭方」断开连接时的最后一个状态，该状态会持续  **2MSL(Maximum Segment Lifetime)**  时长，之后进入CLOSED 状态。
 
 MSL 指的是 TCP 协议中任何报文在网络上最大的生存时间，任何超过这个时间的数据都将被丢弃。虽然 RFC 793 规定 MSL 为 2 分钟，但是在实际实现的时候会有所不同，比如 Linux 默认为 30 秒，那么 2MSL 就是 60 秒。
 
@@ -103,12 +103,12 @@ MSL 与 TTL 的区别：MSL 的单位是时间，而 TTL 是经过路由跳数�
  net.ipv4.ip_local_port_range
 ```
 
-那么，如果如果主动关闭连接方的 TIME_WAIT 状态过多，占满了所有端口资源，则会导致无法创建新连接。
+那么，如果主动关闭连接方的 TIME_WAIT 状态过多，占满了所有端口资源，则会导致无法创建新连接。
 
 不过，Linux 操作系统提供了两个可以系统参数来快速回收处于 TIME_WAIT 状态的连接，这两个参数都是默认关闭的：
 
 - net.ipv4.tcp_tw_reuse，如果开启该选项的话，客户端（连接发起方） 在调用 connect() 函数时， **内核会随机找一个 TIME_WAIT 状态超过 1 秒的连接给新的连接复用** ，所以该选项只适用于连接发起方。
-- net.ipv4.tcp_tw_recycle，如果开启该选项的话，允许处于 TIME_WAIT 状态的连接被快速回收，该参数在  **NAT 的网络下是不安全的！** 详细见这篇文章介绍：[字节面试：SYN 报文什么时候情况下会被丢弃？](https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247502230&idx=1&sn=5fb86772de17ab650088944d4d0adf62&scene=21#wechat_redirect)
+- net.ipv4.tcp_tw_recycle，如果开启该选项的话，允许处于 TIME_WAIT 状态的连接被快速回收，该参数在  **NAT 的网络下是不安全的！** 详细见这篇文章介绍：[字节面试：SYN 报文什么时候情况下会被丢弃？](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP/SYN%E6%8A%A5%E6%96%87%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E6%83%85%E5%86%B5%E4%B8%8B%E4%BC%9A%E8%A2%AB%E4%B8%A2%E5%BC%83/)
 
 要使得上面这两个参数生效，有一个前提条件，就是要打开 TCP 时间戳，即 net.ipv4.tcp_timestamps=1（默认即为 1）。
 

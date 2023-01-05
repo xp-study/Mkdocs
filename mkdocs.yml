@@ -69,6 +69,7 @@ nav:
                 - HTTP3强势来袭: 计算机基础/计算机网络/HTTP/HTTP3强势来袭.md
                 - 既然有HTTP协议为什么还要有RPC: 计算机基础/计算机网络/HTTP/既然有HTTP协议为什么还要有RPC.md
                 - 既然有HTTP协议为什么还要有WebSocket: 计算机基础/计算机网络/HTTP/既然有HTTP协议为什么还要有WebSocket.md
+                - 如何使用tcpdump抓拍https包: 计算机基础/计算机网络/HTTP/如何使用tcpdump抓拍https包.md
         - 计算机操作系统:
             - 硬件结构:
                 - 冯诺依曼模型: 计算机基础/计算机操作系统/硬件结构/CPU是如何执行程序的.md
@@ -491,6 +492,10 @@ nav:
             - 自动化部署SpringBoot项目:  持续集成/Jenkins/Jenkins自动化部署SpringBoot项目.md         
     - 文档管理:
         - Seafile+Onlyoffice部署: 文档管理/seafile+onlyoffice部署.md
+    - 版本管理:
+        - Git简明教程:
+            - 一文讲清Git的基础知识Git简明教程: Git简明教程/一文讲清Git的基础知识Git简明教程.md
+            - 写给自己的Git分支使用备忘指南: Git简明教程/写给自己的Git分支使用备忘指南.md
     - 代码私有仓库部署: 
         - 使用Docker部署Gitlab: Gitlab私有仓库搭建/使用Docker部署Gitlab.md
         - gitlab设置中文:  Gitlab私有仓库搭建/gitlab设置中文.md

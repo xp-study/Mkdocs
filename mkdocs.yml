@@ -426,6 +426,7 @@ nav:
                 - MySQL单表不要超过2000W行靠谱吗: 中间件/Mysql/索引篇/MySQL单表不要超过2000W行靠谱吗.md
                 - 索引失效有哪些: 中间件/Mysql/索引篇/索引失效有哪些.md
                 - MySQL使用like“%x“索引一定会失效吗: 中间件/Mysql/索引篇/MySQL使用like“%x“索引一定会失效吗.md
+                - count(*)和count(1)有什么区别: 中间件/Mysql/索引篇/count(*)和count(1)有什么区别.md
     - 微服务与分布式理论:
         - 康威定律: 微服务与分布式/康威定律.md
         - 分布式ACID、CAP、BASE理论: 微服务与分布式/分布式ACID、CAP、BASE理论.md

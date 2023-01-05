@@ -432,6 +432,11 @@ nav:
                 - MySQL可重复读隔离级别完全解决幻读了吗: 中间件/Mysql/事务篇/MySQL可重复读隔离级别完全解决幻读了吗.md
             - 锁篇:
                 - MySQL有哪些锁: 中间件/Mysql/锁篇/MySQL有哪些锁.md
+                - MySQL是怎么加锁的: 中间件/Mysql/锁篇/MySQL是怎么加锁的.md
+                - update没加索引会锁全表吗: 中间件/Mysql/锁篇/update没加索引会锁全表吗.md
+                - MySQL记录锁加间隙锁可以防止删除操作而导致的幻读吗: 中间件/Mysql/锁篇/MySQL记录锁加间隙锁可以防止删除操作而导致的幻读吗.md
+                - MySQL死锁了怎么办: 中间件/Mysql/锁篇/MySQL死锁了怎么办.md
+                - 加了什么锁导致死锁的: 中间件/Mysql/锁篇/加了什么锁导致死锁的.md
     - 微服务与分布式理论:
         - 康威定律: 微服务与分布式/康威定律.md
         - 分布式ACID、CAP、BASE理论: 微服务与分布式/分布式ACID、CAP、BASE理论.md

@@ -437,6 +437,10 @@ nav:
                 - MySQL记录锁加间隙锁可以防止删除操作而导致的幻读吗: 中间件/Mysql/锁篇/MySQL记录锁加间隙锁可以防止删除操作而导致的幻读吗.md
                 - MySQL死锁了怎么办: 中间件/Mysql/锁篇/MySQL死锁了怎么办.md
                 - 加了什么锁导致死锁的: 中间件/Mysql/锁篇/加了什么锁导致死锁的.md
+            - 日志篇:
+                - undolog与redolog与binlog有什么用: 中间件/Mysql/日志篇/undolog与redolog与binlog有什么用.md
+            - 内存篇:
+                - 揭开BufferPool的面纱: 中间件/Mysql/内存篇/揭开BufferPool的面纱.md
     - 微服务与分布式理论:
         - 康威定律: 微服务与分布式/康威定律.md
         - 分布式ACID、CAP、BASE理论: 微服务与分布式/分布式ACID、CAP、BASE理论.md

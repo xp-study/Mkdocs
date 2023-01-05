@@ -412,10 +412,12 @@ nav:
         - Nodejs开发:
             - Node.js开发环境搭建: 开发语言/Nodejs/Node.js开发环境搭建.md
     - 中间件:
-        - Mysql:
-            - 如何开启慢Sql日志: 中间件/Mysql/如何开启慢Sql日志.md
-            - 如何设置数据表字符编码: 中间件/Mysql/如何设置数据表字符编码.md
-            - Mysql中Null值是如何存放的: 中间件/Mysql/Mysql中Null值是如何存放的.md
+        - 基础篇:
+            - Mysql:
+                - 执行一条select语句期间发生了什么: 中间件/Mysql/基础篇/执行一条select语句期间发生了什么.md
+                - 如何开启慢Sql日志: 中间件/Mysql/基础篇/如何开启慢Sql日志.md
+                - 如何设置数据表字符编码: 中间件/Mysql/基础篇/如何设置数据表字符编码.md
+                - Mysql中Null值是如何存放的: 中间件/Mysql/基础篇/Mysql中Null值是如何存放的.md
     - 微服务与分布式理论:
         - 康威定律: 微服务与分布式/康威定律.md
         - 分布式ACID、CAP、BASE理论: 微服务与分布式/分布式ACID、CAP、BASE理论.md
@@ -462,6 +464,8 @@ nav:
             - 5.应用服务: 领域驱动设计/内部博客系列/5.应用服务.md
             - 6.六边形架构: 领域驱动设计/内部博客系列/6.六边形架构.md      
     - 工具|部署:
+        - Linux Shell:
+            - Linux操作必备150个命令: 工具|部署/shell/Linux操作必备150个命令.md
         - Git简明教程:
             - 一文讲清Git的基础知识Git简明教程: 工具|部署/Git简明教程/一文讲清Git的基础知识Git简明教程.md
             - 写给自己的Git分支使用备忘指南: 工具|部署/Git简明教程/写给自己的Git分支使用备忘指南.md

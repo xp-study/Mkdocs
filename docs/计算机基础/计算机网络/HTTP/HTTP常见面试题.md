@@ -917,8 +917,6 @@ HTTP/2 通过 Stream 的并发能力，解决了 HTTP/1 队头阻塞的问题，
 
 所以，一旦发生了丢包现象，就会触发 TCP 的重传机制，这样在一个 TCP 连接中的 **所有的 HTTP 请求都必须等待这个丢了的包被重传回来** 。
 
-TIP
-
 如果想更进一步了解 HTTP/2 协议，可以看我这篇文章：[HTTP/2 牛逼在哪？](https://xiaolincoding.com/network/2_http/http2.html)
 
 ### HTTP/3 做了哪些优化？

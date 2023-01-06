@@ -13,8 +13,6 @@ MySQL的慢查询日志是MySQL提供的一种日志记录，它用来记录在M
 
 MySQL 慢查询的相关参数解释：
 
-MySQL 慢查询的相关参数解释：
-
 `slow_query_log`  ：是否开启慢查询日志，1表示开启，0表示关闭。
 
 `log-slow-queries` ：旧版（5.6以下版本）MySQL数据库慢查询日志存储路径。可以不设置该参数，系统则会默认给一个缺省的文件host_name-slow.log
@@ -78,8 +76,6 @@ mysql>
 `slow_query_log =1`
 
 `slow_query_log_file=/tmp/mysql_slow.log`
-
-![clip_image002](./assets/MySQL慢查询日志总结/2.jpg)
 
 ```shell
 mysql> show variables like 'slow_query%';

@@ -143,8 +143,6 @@ MySQL 的连接也跟 HTTP 一样，有短连接和长连接的概念，它们�
 
 对于 MySQL 8.0 之前的版本，如果想关闭查询缓存，我们可以通过将参数 query_cache_type 设置成 DEMAND。
 
-TIP
-
 这里说的查询缓存是 server 层的，也就是 MySQL 8.0 版本移除的是 server 层的查询缓存，并不是 Innodb 存储引擎中的 buffer pool。
 
 ## 第三步：解析 SQL
@@ -292,7 +290,7 @@ select * from product where name = 'iphone';
 select * from t_user  where age > 20 and reward = 100000;
 ```
 
-联合索引当遇到范围查询 (>、<) 就会停止匹配，也就是  **age 字段能用到联合索引，但是 reward 字段则无法利用到索引** 。具体原因这里可以看这篇：[索引常见面试题](https://xiaolincoding.com/mysql/index/index_interview.html#按字段个数分类)
+联合索引当遇到范围查询 (>、<) 就会停止匹配，也就是  **age 字段能用到联合索引，但是 reward 字段则无法利用到索引** 。具体原因这里可以看这篇：[索引常见面试题](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E7%B4%A2%E5%BC%95%E7%AF%87/%E7%B4%A2%E5%BC%95%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98/)
 
 那么，不使用索引下推（MySQL 5.6 之前的版本）时，执行器与存储引擎的执行流程是这样的：
 

@@ -86,7 +86,7 @@ t_order.ibd
 
 页是 InnoDB 存储引擎磁盘管理的最小单元，意味着数据库每次读写都是以 16KB 为单位的，一次最少从磁盘中读取 16K 的内容到内存中，一次最少把内存中的 16K 内容刷新到磁盘中。
 
-页的类型有很多，常见的有数据页、undo 日志页、溢出页等等。数据表中的行记录是用「数据页」来管理的，数据页的结构这里我就不讲细说了，之前文章有说过，感兴趣的可以去看这篇文章：[换一个角度看 B+ 树](https://xiaolincoding.com/mysql/index/page.html)
+页的类型有很多，常见的有数据页、undo 日志页、溢出页等等。数据表中的行记录是用「数据页」来管理的，数据页的结构这里我就不讲细说了，之前文章有说过，感兴趣的可以去看这篇文章：[换一个角度看 B+ 树](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E7%B4%A2%E5%BC%95%E7%AF%87/%E4%BB%8E%E6%95%B0%E6%8D%AE%E9%A1%B5%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8BB%2B%E6%A0%91/)
 
 总之知道表中的记录存储在「数据页」里面就行。
 
@@ -108,7 +108,7 @@ B+ 树中每一层都是通过双向链表连接起来的，如果是以页为�
 
 - 索引段：存放 B + 树的非叶子节点的区的集合；
 - 数据段：存放 B + 树的叶子节点的区的集合；
-- 回滚段：存放的是回滚数据的区的集合，之前讲[事务隔离 ](https://xiaolincoding.com/mysql/transaction/mvcc.html)的时候就介绍到了 MVCC 利用了回滚段实现了多版本查询数据。
+- 回滚段：存放的是回滚数据的区的集合，之前讲[事务隔离 ](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E4%BA%8B%E5%8A%A1%E7%AF%87/%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB%E6%98%AF%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84/)的时候就介绍到了 MVCC 利用了回滚段实现了多版本查询数据。
 
 好了，终于说完表空间的结构了。接下来，就具体讲一下 InnoDB 的行格式了。
 
@@ -192,7 +192,7 @@ CREATE TABLE `t_user` (
 
 同样的道理， NULL 值列表的信息也需要逆序存放。
 
-如果你不知道什么是 CPU Cache，可以看[这篇文章 ](https://xiaolincoding.com/os/1_hardware/how_to_make_cpu_run_faster.html)，这属于计算机组成的知识。
+如果你不知道什么是 CPU Cache，可以看[这篇文章 ](https://docs.wsh-study.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E7%A1%AC%E4%BB%B6%E7%BB%93%E6%9E%84/%E5%A6%82%E4%BD%95%E5%86%99%E5%87%BA%E8%AE%A9CPU%E8%B7%91%E5%BE%97%E6%9B%B4%E5%BF%AB%E7%9A%84%E4%BB%A3%E7%A0%81/)，这属于计算机组成的知识。
 
 > 每个数据库表的行格式都有「变长字段字节数列表」吗？
 
@@ -281,7 +281,7 @@ NULL 值列表也不是必须的。
 
 这条记录上一个版本的指针。roll_pointer 是必需的，占用 7 个字节。
 
-如果你熟悉 MVCC 机制，你应该就清楚 trx_id 和 roll_pointer 的作用了，如果你还不知道 MVCC 机制，可以看完[这篇文章 ](https://xiaolincoding.com/mysql/transaction/mvcc.html)，一定要掌握，面试也很经常问 MVCC 是怎么实现的。
+如果你熟悉 MVCC 机制，你应该就清楚 trx_id 和 roll_pointer 的作用了，如果你还不知道 MVCC 机制，可以看完[这篇文章 ](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E4%BA%8B%E5%8A%A1%E7%AF%87/%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB%E6%98%AF%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84/)，一定要掌握，面试也很经常问 MVCC 是怎么实现的。
 
 ## varchar(n) 中 n 最大取值为多少？
 
@@ -366,7 +366,7 @@ CREATE TABLE test (
 
  **如果有多个字段的话，要保证所有字段的长度 + 变长字段字节数列表所占用的字节数 + NULL值列表所占用的字节数 <= 65535** 。
 
-这里举个多字段的情况的例子（感谢@Emoji同学提供的例子）
+这里举个多字段的情况的例子
 
 ![img](./assets/Mysql一行记录是怎么存储的/19.png)
 

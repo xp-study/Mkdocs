@@ -229,7 +229,7 @@ Innodb 根据索引类型不同，分为聚集和二级索引。他们区别在�
 
 因为表的数据都是存放在聚集索引的叶子节点里，所以 InnoDB 存储引擎一定会为表创建一个聚集索引，且由于数据在物理上只会保存一份，所以聚簇索引只能有一个，而二级索引可以创建多个。
 
-更多关于 Innodb 的 B+ 树，可以看我之前写的这篇：[从数据页的角度看 B+ 树 ](https://mp.weixin.qq.com/s?__biz=MzUxODAzNDg4NQ==&mid=2247502059&idx=1&sn=ccbee22bda8c3d6a98237be769a7c89c&scene=21#wechat_redirect)。
+更多关于 Innodb 的 B+ 树，可以看我之前写的这篇：[从数据页的角度看 B+ 树 ](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E7%B4%A2%E5%BC%95%E7%AF%87/%E4%BB%8E%E6%95%B0%E6%8D%AE%E9%A1%B5%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8BB%2B%E6%A0%91/)。
 
 ## 总结
 

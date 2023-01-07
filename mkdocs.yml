@@ -514,7 +514,8 @@ nav:
         - Git简明教程:
             - 一文讲清Git的基础知识Git简明教程: 工具|部署/Git简明教程/一文讲清Git的基础知识Git简明教程.md
             - 写给自己的Git分支使用备忘指南: 工具|部署/Git简明教程/写给自己的Git分支使用备忘指南.md
-        - Docker从入门到实践: 工具|部署/Docker从入门到实践/Docker从入门到实践.md
+        - Docker从入门到实践: 
+            - Docker从入门到实践: 工具|部署/Docker从入门到实践/Docker从入门到实践.md
         - Kubernetes开发技术:
             - Kubernetes部署:
                 - 部署Kubernetes: 工具|部署/Kubernetes开发技术/Kubernetes部署/部署一套完整的Kubernetes高可用集群.md

@@ -266,7 +266,9 @@ nav:
                     - 如何退出协程goroutine(超时场景): 开发语言/Go语言开发/Go语言高性能编程/并发编程/如何退出协程goroutine(超时场景).md
                     - 如何退出协程goroutine(其他场景): 开发语言/Go语言开发/Go语言高性能编程/并发编程/如何退出协程goroutine(其他场景).md
                     - 控制协程(goroutine)的并发数量: 开发语言/Go语言开发/Go语言高性能编程/并发编程/控制协程(goroutine)的并发数量.md
-                    - 内联函数和编译器对Go代码的优化: 开发语言/Go语言开发/Go语言高性能编程/编译优化/内联函数和编译器对Go代码的优化.md
+                    - sync.Pool: 开发语言/Go语言开发/Go语言高性能编程/并发编程/Gosync.Pool.md
+                    - sync.Once: 开发语言/Go语言开发/Go语言高性能编程/并发编程/Gosync.Once.md
+                    - sync.Cond: 开发语言/Go语言开发/Go语言高性能编程/并发编程/Gosync.Cond.md
                 - 编译优化:
                     - 减小Go代码编译后的二进制体积: 开发语言/Go语言开发/Go语言高性能编程/编译优化/减小Go代码编译后的二进制体积.md
                     - 内联函数和编译器对Go代码的优化: 开发语言/Go语言开发/Go语言高性能编程/编译优化/内联函数和编译器对Go代码的优化.md
@@ -429,9 +431,6 @@ nav:
                 - 使用IDEA配置Maven:  开发语言/Java语言开发/开发环境搭建/使用IDEA配置Maven.md
                 - SpringBoot第一个程序: 开发语言/Java语言开发/开发环境搭建/SpringBoot第一个程序.md
                 - Dockerfile部署SpringBoot项目: 开发语言/Java语言开发/开发环境搭建/IDEA连接远程服务器Docker部署SpringBoot项目.md
-                - Gosync.Pool: 开发语言/Go语言开发/Go语言高性能编程/并发编程/Gosync.Pool.md
-                - Gosync.Once: 开发语言/Go语言开发/Go语言高性能编程/并发编程/Gosync.Once.md
-                - Gosync.Cond: 开发语言/Go语言开发/Go语言高性能编程/并发编程/Gosync.Cond.md
         - Nodejs开发:
             - Node.js开发环境搭建: 开发语言/Nodejs/Node.js开发环境搭建.md
     - 中间件:

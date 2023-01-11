@@ -1,6 +1,6 @@
 # undolog与redolog与binlog有什么用
 
-从这篇「[执行一条 SQL 查询语句，期间发生了什么？ ](https://xiaolincoding.com/mysql/base/how_select.html)」中，我们知道了一条查询语句经历的过程，这属于「读」一条记录的过程，如下图：
+从这篇「[执行一条 SQL 查询语句，期间发生了什么？ ](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E5%9F%BA%E7%A1%80%E7%AF%87/%E6%89%A7%E8%A1%8C%E4%B8%80%E6%9D%A1select%E8%AF%AD%E5%8F%A5%E6%9C%9F%E9%97%B4%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88/)」中，我们知道了一条查询语句经历的过程，这属于「读」一条记录的过程，如下图：
 
 ![查询语句执行流程](./assets/undolog与redolog与binlog有什么用/1.png)
 
@@ -39,7 +39,7 @@ UPDATE t_user SET name = 'xiaolin' WHERE id = 1;
 
 如果我们每次在事务执行过程中，都记录下回滚时需要的信息到一个日志里，那么在事务执行中途发生了 MySQL 崩溃后，就不用担心无法回滚到事务之前的数据，我们可以通过这个日志回滚到事务之前的数据。
 
-实现这一机制就是  **undo log（回滚日志），它保证了事务的 [ACID 特性 ](https://xiaolincoding.com/mysql/transaction/mvcc.html#事务有哪些特性)中的原子性（Atomicity）** 。
+实现这一机制就是  **undo log（回滚日志），它保证了事务的 [ACID 特性 ](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E4%BA%8B%E5%8A%A1%E7%AF%87/%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB%E6%98%AF%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84/)中的原子性（Atomicity）** 。
 
 undo log 是一种用于撤销回退的日志。在事务没提交之前，MySQL 会先记录更新前的数据到 undo log 日志文件里面，当事务回滚时，可以利用 undo log 来进行回滚。如下图：
 

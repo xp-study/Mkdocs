@@ -14,7 +14,7 @@
 
 首先来看看 MySQL 文档是怎么定义幻读（Phantom Read）的:
 
- ***The so-called phantom problem occurs within a transaction when the same query produces different sets of rows at different times. For example, if a SELECT is executed twice, but returns a row the second time that was not returned the first time, the row is a “phantom” row.** * 
+ **The so-called phantom problem occurs within a transaction when the same query produces different sets of rows at different times. For example, if a SELECT is executed twice, but returns a row the second time that was not returned the first time, the row is a “phantom” row.** 
 
 翻译：当同一个查询在不同的时间产生不同的结果集时，事务中就会出现所谓的幻象问题。例如，如果 SELECT 执行了两次，但第二次返回了第一次没有返回的行，则该行是“幻像”行。
 
@@ -31,7 +31,7 @@ SELECT * FROM t_test WHERE id > 100;
 
 > MySQL 是怎么解决幻读的？
 
-MySQL InnoDB 引擎的默认隔离级别虽然是「可重复读」，但是它很大程度上避免幻读现象（并不是完全解决了，详见这篇[文章 ](https://xiaolincoding.com/mysql/transaction/phantom.html)），解决的方案有两种：
+MySQL InnoDB 引擎的默认隔离级别虽然是「可重复读」，但是它很大程度上避免幻读现象（并不是完全解决了，详见这篇[文章](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E4%BA%8B%E5%8A%A1%E7%AF%87/MySQL%E5%8F%AF%E9%87%8D%E5%A4%8D%E8%AF%BB%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB%E5%AE%8C%E5%85%A8%E8%A7%A3%E5%86%B3%E5%B9%BB%E8%AF%BB%E4%BA%86%E5%90%97/)），解决的方案有两种：
 
 - 针对 **快照读** （普通 select 语句），是 **通过 MVCC 方式解决了幻读** ，因为可重复读隔离级别下，事务执行过程中看到的数据，一直跟这个事务启动时看到的数据是一致的，即使中途有其他事务插入了一条数据，是查询不出来这条数据的，所以就很好了避免幻读问题。
 - 针对 **当前读** （select ... for update 等语句），是 **通过 next-key lock（记录锁+间隙锁）方式解决了幻读** ，因为当执行 select ... for update 语句的时候，会加上 next-key lock，如果有其他事务在 next-key lock 锁范围内插入了一条记录，那么这个插入语句就会被阻塞，无法成功插入，所以就很好了避免幻读问题。

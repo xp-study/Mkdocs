@@ -71,11 +71,11 @@ commit; //锁释放
 
 ![图片](./assets/MySQL死锁了怎么办/4.png)
 
-next-key 锁的加锁规则其实挺复杂的，在一些场景下会退化成记录锁或间隙锁，我之前也写一篇加锁规则，详细可以看这篇：[MySQL 是怎么加锁的？](https://xiaolincoding.com/mysql/lock/how_to_lock.html)
+next-key 锁的加锁规则其实挺复杂的，在一些场景下会退化成记录锁或间隙锁，我之前也写一篇加锁规则，详细可以看这篇：[MySQL 是怎么加锁的？](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E9%94%81%E7%AF%87/MySQL%E6%98%AF%E6%80%8E%E4%B9%88%E5%8A%A0%E9%94%81%E7%9A%84/)
 
 需要注意的是，如果 update 语句的 where 条件没有用到索引列，那么就会全表扫描，在一行行扫描的过程中，不仅给行记录加上了行锁，还给行记录两边的空隙也加上了间隙锁，相当于锁住整个表，然后直到事务结束才会释放锁。
 
-所以在线上千万不要执行没有带索引条件的 update 语句，不然会造成业务停滞，我有个读者就因为干了这个事情，然后被老板教育了一波，详细可以看这篇：[update 没加索引会锁全表？](https://xiaolincoding.com/mysql/lock/update_index.html)
+所以在线上千万不要执行没有带索引条件的 update 语句，不然会造成业务停滞，我有个读者就因为干了这个事情，然后被老板教育了一波，详细可以看这篇：[update 没加索引会锁全表？](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E9%94%81%E7%AF%87/update%E6%B2%A1%E5%8A%A0%E7%B4%A2%E5%BC%95%E4%BC%9A%E9%94%81%E5%85%A8%E8%A1%A8%E5%90%97/)
 
 回到前面死锁的例子。
 
@@ -108,7 +108,7 @@ next-key 锁的范围 (1006, +∞]，是怎么确定的？
 
 根据我的经验，如果 LOCK_MODE 是 next-key 锁或者间隙锁，那么 LOCK_DATA 就表示锁的范围最右值，此次的事务 A 的 LOCK_DATA 是 supremum pseudo-record，表示的是 +∞。然后锁范围的最左值是 t_order 表中最后一个记录的 index_order 的值，也就是 1006。因此，next-key 锁的范围 (1006, +∞]。
 
-有的读者问，[MySQL 是怎么加锁的？ ](https://xiaolincoding.com/mysql/lock/how_to_lock.html)这篇文章讲非唯一索引等值查询时，说「当查询的记录不存在时，加 next-key lock，然后会退化为间隙锁」。为什么上面事务 A 的 next-key lock 并没有退化为间隙锁？
+有的读者问，[MySQL 是怎么加锁的？ ](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E9%94%81%E7%AF%87/MySQL%E6%98%AF%E6%80%8E%E4%B9%88%E5%8A%A0%E9%94%81%E7%9A%84/)这篇文章讲非唯一索引等值查询时，说「当查询的记录不存在时，加 next-key lock，然后会退化为间隙锁」。为什么上面事务 A 的 next-key lock 并没有退化为间隙锁？
 
 如果表中最后一个记录的 order_no 为 1005，那么等值查询 order_no = 1006（不存在），就是 next key lock，如上面事务 A 的情况。
 

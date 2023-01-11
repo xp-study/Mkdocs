@@ -71,7 +71,7 @@ undo log 是一种用于撤销回退的日志。在事务没提交之前，MySQL
 - 「读提交」隔离级别是在每个 select 都会生成一个新的 Read View，也意味着，事务期间的多次读取同一条数据，前后两次读的数据可能会出现不一致，因为可能这期间另外一个事务修改了该记录，并提交了事务。
 - 「可重复读」隔离级别是启动事务时生成一个 Read View，然后整个事务期间都在用这个 Read View，这样就保证了在事务期间读到的数据都是事务启动前的记录。
 
-这两个隔离级别实现是通过「事务的 Read View 里的字段」和「记录中的两个隐藏列（trx_id 和 roll_pointer）」的比对，如果不满足可见行，就会顺着 undo log 版本链里找到满足其可见性的记录，从而控制并发事务访问同一个记录时的行为，这就叫 MVCC（多版本并发控制）。具体的实现可以看我这篇文章：[事务隔离级别是怎么实现的？](https://xiaolincoding.com/mysql/transaction/mvcc.html#事务的隔离级别有哪些)
+这两个隔离级别实现是通过「事务的 Read View 里的字段」和「记录中的两个隐藏列（trx_id 和 roll_pointer）」的比对，如果不满足可见性，就会顺着 undo log 版本链里找到满足其可见性的记录，从而控制并发事务访问同一个记录时的行为，这就叫 MVCC（多版本并发控制）。具体的实现可以看我这篇文章：[事务隔离级别是怎么实现的？](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E4%BA%8B%E5%8A%A1%E7%AF%87/%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB%E6%98%AF%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0%E7%9A%84/)
 
 因此，undo log 两大作用：
 
@@ -121,7 +121,7 @@ Buffer Pool 除了缓存「索引页」和「数据页」，还包括了 Undo �
 
 当我们查询一条记录时，InnoDB 是会把整个页的数据加载到 Buffer Pool 中，将页加载到 Buffer Pool 后，再通过页里的「页目录」去定位到某条具体的记录。
 
-关于页结构长什么样和索引怎么查询数据的问题可以在这篇找到答案：[换一个角度看 B+ 树](https://mp.weixin.qq.com/s/A5gNVXMNE-iIlY3oofXtLw)
+关于页结构长什么样和索引怎么查询数据的问题可以在这篇找到答案：[换一个角度看 B+ 树](https://docs.wsh-study.com/%E4%B8%AD%E9%97%B4%E4%BB%B6/Mysql/%E7%B4%A2%E5%BC%95%E7%AF%87/%E4%BB%8E%E6%95%B0%E6%8D%AE%E9%A1%B5%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8BB%2B%E6%A0%91/)
 
 ## 为什么需要 redo log ？
 
@@ -214,7 +214,7 @@ redo log buffer 默认大小 16 MB，可以通过 `innodb_log_Buffer_size` 参�
 
 - 当设置该 **参数为 0 时** ，表示每次事务提交时 ，还是 **将 redo log 留在 redo log buffer 中**  ，该模式下在事务提交时不会主动触发写入磁盘的操作。
 - 当设置该 **参数为 1 时** ，表示每次事务提交时，都 **将缓存在 redo log buffer 里的 redo log 直接持久化到磁盘** ，这样可以保证 MySQL 异常重启之后数据不会丢失。
-- 当设置该 **参数为 2 时** ，表示每次事务提交时，都只是缓存在 redo log buffer 里的 redo log  **写到 redo log 文件，注意写入到「 redo log 文件」并不意味着写入到了磁盘** ，因为操作系统的文件系统中有个 Page Cache（如果你想了解 Page Cache，可以看[这篇 ](https://xiaolincoding.com/os/6_file_system/pagecache.html)），Page Cache 是专门用来缓存文件数据的，所以写入「 redo log文件」意味着写入到了操作系统的文件缓存。
+- 当设置该 **参数为 2 时** ，表示每次事务提交时，都只是缓存在 redo log buffer 里的 redo log  **写到 redo log 文件，注意写入到「 redo log 文件」并不意味着写入到了磁盘** ，因为操作系统的文件系统中有个 Page Cache，Page Cache 是专门用来缓存文件数据的，所以写入「 redo log文件」意味着写入到了操作系统的文件缓存。
 
 我画了一个图，方便大家理解：
 
